@@ -1,0 +1,372 @@
+[ 2019-05-29T10:09:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000744s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T10:09:07+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T10:09:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002452s ]
+[ 2019-05-29T10:09:07+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.002900s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'new_keyword' [ RunTime:0.000544s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 't_new_keyword' [ RunTime:0.000479s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'admin' AND table_name = 't_new_keyword' ORDER BY ORDINAL_POSITION [ RunTime:0.003186s ]
+[ 2019-05-29T10:09:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000140s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T10:09:07+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T10:09:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000937s ]
+[ 2019-05-29T10:09:07+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T10:09:07+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T10:09:07+08:00 ][ info ] [ LANG ] /Users/luodiao/Sites/admin/application/admin/lang/zh-cn.php
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000909s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.003609s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'new_keyword' LIMIT 1 [ RunTime:0.000448s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] INSERT INTO `t_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'new_keyword' , 'NewKeyword' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1559095747 , 1559095747) [ RunTime:0.001690s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/index' LIMIT 1 [ RunTime:0.000288s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/add' LIMIT 1 [ RunTime:0.000220s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/edit' LIMIT 1 [ RunTime:0.000228s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/del' LIMIT 1 [ RunTime:0.000207s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/multi' LIMIT 1 [ RunTime:0.000213s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] INSERT INTO `t_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 304 , 'new_keyword/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1559095747 , 1559095747) [ RunTime:0.002023s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] INSERT INTO `t_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 304 , 'new_keyword/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1559095747 , 1559095747) [ RunTime:0.001140s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] INSERT INTO `t_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 304 , 'new_keyword/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1559095747 , 1559095747) [ RunTime:0.000263s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] INSERT INTO `t_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 304 , 'new_keyword/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1559095747 , 1559095747) [ RunTime:0.000218s ]
+[ 2019-05-29T10:09:07+08:00 ][ sql ] [ SQL ] INSERT INTO `t_auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 304 , 'new_keyword/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1559095747 , 1559095747) [ RunTime:0.000222s ]
+[ 2019-05-29T10:14:18+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000136s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T10:14:18+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T10:14:18+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000690s ]
+[ 2019-05-29T10:14:18+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T10:14:18+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000852s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-29T10:14:18+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'new_keyword' [ RunTime:0.000563s ]
+[ 2019-05-29T10:14:18+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 't_new_keyword' [ RunTime:0.000429s ]
+[ 2019-05-29T10:15:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000130s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T10:15:05+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T10:15:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000700s ]
+[ 2019-05-29T10:15:05+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001057s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'new_keyword' [ RunTime:0.000710s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 't_new_keyword' [ RunTime:0.000574s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'admin' AND table_name = 't_new_keyword' ORDER BY ORDINAL_POSITION [ RunTime:0.002057s ]
+[ 2019-05-29T10:15:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000154s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T10:15:05+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T10:15:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000760s ]
+[ 2019-05-29T10:15:05+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T10:15:05+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T10:15:05+08:00 ][ info ] [ LANG ] /Users/luodiao/Sites/admin/application/admin/lang/zh-cn.php
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000980s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.003469s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'new_keyword' LIMIT 1 [ RunTime:0.000519s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/index' LIMIT 1 [ RunTime:0.000342s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/add' LIMIT 1 [ RunTime:0.000384s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/edit' LIMIT 1 [ RunTime:0.000254s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/del' LIMIT 1 [ RunTime:0.000321s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/multi' LIMIT 1 [ RunTime:0.000319s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1559096105  WHERE  `id` = 305 [ RunTime:0.000383s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1559096105  WHERE  `id` = 306 [ RunTime:0.000313s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1559096105  WHERE  `id` = 307 [ RunTime:0.000296s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1559096105  WHERE  `id` = 308 [ RunTime:0.000281s ]
+[ 2019-05-29T10:15:05+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1559096105  WHERE  `id` = 309 [ RunTime:0.000284s ]
+[ 2019-05-29T10:21:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000143s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T10:21:36+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T10:21:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001454s ]
+[ 2019-05-29T10:21:36+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T10:21:36+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001787s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-29T10:21:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'new_keyword' [ RunTime:0.000627s ]
+[ 2019-05-29T10:21:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 't_new_keyword' [ RunTime:0.000561s ]
+[ 2019-05-29T10:21:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000144s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T10:21:41+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T10:21:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000986s ]
+[ 2019-05-29T10:21:41+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000958s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'new_keyword' [ RunTime:0.000637s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 't_new_keyword' [ RunTime:0.000526s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'admin' AND table_name = 't_new_keyword' ORDER BY ORDINAL_POSITION [ RunTime:0.003405s ]
+[ 2019-05-29T10:21:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000196s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T10:21:41+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T10:21:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000967s ]
+[ 2019-05-29T10:21:41+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T10:21:41+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T10:21:41+08:00 ][ info ] [ LANG ] /Users/luodiao/Sites/admin/application/admin/lang/zh-cn.php
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000927s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.003161s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'new_keyword' LIMIT 1 [ RunTime:0.000432s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/index' LIMIT 1 [ RunTime:0.000325s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/add' LIMIT 1 [ RunTime:0.000289s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/edit' LIMIT 1 [ RunTime:0.000323s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/del' LIMIT 1 [ RunTime:0.000281s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/multi' LIMIT 1 [ RunTime:0.000355s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1559096501  WHERE  `id` = 305 [ RunTime:0.000373s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1559096501  WHERE  `id` = 306 [ RunTime:0.000297s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1559096501  WHERE  `id` = 307 [ RunTime:0.000275s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1559096501  WHERE  `id` = 308 [ RunTime:0.000280s ]
+[ 2019-05-29T10:21:41+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1559096501  WHERE  `id` = 309 [ RunTime:0.000378s ]
+[ 2019-05-29T14:14:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000163s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:14:44+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:14:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001478s ]
+[ 2019-05-29T14:17:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000150s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:17:37+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:17:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001280s ]
+[ 2019-05-29T14:17:37+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T06:40:56+00:00 ][ error ] [8]Undefined variable: path[/Users/luodiao/Sites/admin/application/config.php:280]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T06:42:25+00:00 ][ error ] [8]Undefined variable: path[/Users/luodiao/Sites/admin/application/config.php:298]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:43:21+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000143s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:43:21+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:43:21+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001066s ]
+[ 2019-05-29T14:43:21+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T14:45:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000143s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:45:49+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:45:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001603s ]
+[ 2019-05-29T14:45:49+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T14:51:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000180s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:51:01+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:51:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001625s ]
+[ 2019-05-29T14:51:01+08:00 ][ error ] [0]Fatal error: Class 'app\admin\command\Config' not found[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:19]
+[ 2019-05-29T14:51:30+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000137s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:51:30+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:51:30+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001609s ]
+[ 2019-05-29T14:51:30+08:00 ][ error ] [0]Fatal error: Class 'app\admin\command\Config' not found[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:19]
+[ 2019-05-29T14:51:51+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000136s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:51:51+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:51:51+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001565s ]
+[ 2019-05-29T14:51:51+08:00 ][ error ] [0]Fatal error: Class 'app\admin\command\Config' not found[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:19]
+[ 2019-05-29T14:52:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000251s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:52:16+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:52:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001160s ]
+[ 2019-05-29T14:52:16+08:00 ][ error ] [0]Fatal error: Class 'think\facade\Config' not found[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:19]
+[ 2019-05-29T14:54:15+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000141s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:54:15+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:54:15+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001617s ]
+[ 2019-05-29T14:54:15+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T14:54:45+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000144s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:54:45+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:54:45+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000785s ]
+[ 2019-05-29T14:54:45+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-29T14:55:08+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000147s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:55:08+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:55:08+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000861s ]
+[ 2019-05-29T14:56:28+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000181s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:56:28+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:56:28+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001088s ]
+[ 2019-05-29T14:56:28+08:00 ][ error ] [2]Declaration of app\admin\command\Vbot::run() should be compatible with think\console\Command::run(think\console\Input $input, think\console\Output $output)[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:70]
+[ 2019-05-29T14:57:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000136s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T14:57:05+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T14:57:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001353s ]
+[ 2019-05-29T14:57:05+08:00 ][ error ] [2]Declaration of app\admin\command\Vbot::run() should be compatible with think\console\Command::run(think\console\Input $input, think\console\Output $output)[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:76]
+[ 2019-05-29T15:00:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000137s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T15:00:01+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T15:00:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001103s ]
+[ 2019-05-29T15:00:01+08:00 ][ error ] [2]Declaration of app\admin\command\Vbot::run() should be compatible with think\console\Command::run(think\console\Input $input, think\console\Output $output)[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:76]
+[ 2019-05-29T15:01:24+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000166s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T15:01:24+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T15:01:24+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001188s ]
+[ 2019-05-29T15:01:24+08:00 ][ error ] [0]Fatal error: Class 'Hanson\Vbot\Foundation\Vbot' not found[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:40]
+[ 2019-05-29T15:18:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000132s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T15:18:40+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T15:18:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001376s ]
+[ 2019-05-29T15:18:40+08:00 ][ error ] [0]Fatal error: Class 'Hanson\MyVbot\Example' not found[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:37]
+[ 2019-05-29T15:19:15+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000171s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T15:19:15+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T15:19:15+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000790s ]
+[ 2019-05-29T15:19:15+08:00 ][ error ] [0]Fatal error: Class 'Hanson\MyVbot\Example' not found[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:37]
+[ 2019-05-29T15:24:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000142s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T15:24:11+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T15:24:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001251s ]
+[ 2019-05-29T15:24:11+08:00 ][ error ] [0]Fatal error: Class 'Hanson\Vbot\Foundation\Vbot' not found[/Users/luodiao/Sites/admin/extend/myvbot/Example.php:25]
+[ 2019-05-29T15:29:18+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000156s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T15:29:18+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T15:29:18+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001108s ]
+[ 2019-05-29T15:29:18+08:00 ][ error ] [0]Fatal error: Class 'Hanson\Vbot\Foundation\Vbot' not found[/Users/luodiao/Sites/admin/extend/myvbot/Example.php:25]
+[ 2019-05-29T16:11:32+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000153s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T16:11:32+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T16:11:32+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002056s ]
+[ 2019-05-29T16:11:32+08:00 ][ error ] [0]Fatal error: Class 'Hanson\Vbot\Foundation\Vbot' not found[/Users/luodiao/Sites/admin/vendor/vbot/run.php:77]
+[ 2019-05-29T16:12:06+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000144s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T16:12:06+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T16:12:06+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001382s ]
+[ 2019-05-29T16:12:06+08:00 ][ error ] [0]Fatal error: Class 'Hanson\Vbot\Foundation\Vbot' not found[/Users/luodiao/Sites/admin/vendor/vbot/run.php:77]
+[ 2019-05-29T16:13:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000139s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T16:13:09+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T16:13:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001186s ]
+[ 2019-05-29T16:17:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000178s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T16:17:57+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T16:17:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000768s ]
+[ 2019-05-29T16:19:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000181s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T16:19:09+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T16:19:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001172s ]
+[ 2019-05-29T16:23:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000145s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T16:23:35+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T16:23:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001169s ]
+[ 2019-05-29T16:24:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000143s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T16:24:17+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T16:24:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000804s ]
+[ 2019-05-29T16:54:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000146s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T16:54:33+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T16:54:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000901s ]
+[ 2019-05-29T16:54:33+08:00 ][ error ] [0]Fatal error: Class 'app\admin\command\Puppet' not found[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:31]
+[ 2019-05-29T16:55:02+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000142s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T16:55:02+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T16:55:02+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001519s ]
+[ 2019-05-29T16:56:47+08:00 ][ error ] [1]Uncaught TypeError: Argument 1 passed to Hanson\Vbot\Foundation\ExceptionHandler::report() must be an instance of Exception, instance of Error given, called in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php on line 133 and defined in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58
+Stack trace:
+#0 /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php(133): Hanson\Vbot\Foundation\ExceptionHandler->report(Object(Error))
+#1 [internal function]: Hanson\Vbot\Foundation\ExceptionHandler->handleException(Object(Error))
+#2 {main}
+  thrown[/Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58]
+[ 2019-05-29T16:57:20+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000140s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T16:57:20+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T16:57:20+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001636s ]
+[ 2019-05-29T16:58:19+08:00 ][ error ] [1]Uncaught TypeError: Argument 1 passed to Hanson\Vbot\Foundation\ExceptionHandler::report() must be an instance of Exception, instance of Error given, called in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php on line 133 and defined in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58
+Stack trace:
+#0 /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php(133): Hanson\Vbot\Foundation\ExceptionHandler->report(Object(Error))
+#1 [internal function]: Hanson\Vbot\Foundation\ExceptionHandler->handleException(Object(Error))
+#2 {main}
+  thrown[/Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58]
+[ 2019-05-29T17:09:25+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000151s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:09:25+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:09:25+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001173s ]
+[ 2019-05-29T17:10:42+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000155s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:10:42+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:10:42+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001577s ]
+[ 2019-05-29T17:12:00+08:00 ][ error ] [1]Uncaught TypeError: Argument 1 passed to Hanson\Vbot\Foundation\ExceptionHandler::report() must be an instance of Exception, instance of Error given, called in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php on line 133 and defined in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58
+Stack trace:
+#0 /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php(133): Hanson\Vbot\Foundation\ExceptionHandler->report(Object(Error))
+#1 [internal function]: Hanson\Vbot\Foundation\ExceptionHandler->handleException(Object(Error))
+#2 {main}
+  thrown[/Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58]
+[ 2019-05-29T17:14:39+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000138s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:14:39+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:14:39+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001319s ]
+[ 2019-05-29T17:14:39+08:00 ][ error ] [64]Cannot use $this as lexical variable[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:33]
+[ 2019-05-29T17:14:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000264s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:14:44+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:14:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001347s ]
+[ 2019-05-29T17:14:44+08:00 ][ error ] [64]Cannot use $this as lexical variable[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:33]
+[ 2019-05-29T17:15:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000151s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:15:17+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:15:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001447s ]
+[ 2019-05-29T17:15:50+08:00 ][ error ] [1]Uncaught TypeError: Argument 1 passed to Hanson\Vbot\Foundation\ExceptionHandler::report() must be an instance of Exception, instance of Error given, called in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php on line 133 and defined in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58
+Stack trace:
+#0 /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php(133): Hanson\Vbot\Foundation\ExceptionHandler->report(Object(Error))
+#1 [internal function]: Hanson\Vbot\Foundation\ExceptionHandler->handleException(Object(Error))
+#2 {main}
+  thrown[/Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58]
+[ 2019-05-29T17:17:56+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000155s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:17:56+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:17:56+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001209s ]
+[ 2019-05-29T17:18:21+08:00 ][ error ] [1]Uncaught TypeError: Argument 1 passed to Hanson\Vbot\Foundation\ExceptionHandler::report() must be an instance of Exception, instance of Error given, called in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php on line 133 and defined in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58
+Stack trace:
+#0 /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php(133): Hanson\Vbot\Foundation\ExceptionHandler->report(Object(Error))
+#1 [internal function]: Hanson\Vbot\Foundation\ExceptionHandler->handleException(Object(Error))
+#2 {main}
+  thrown[/Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58]
+[ 2019-05-29T17:19:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000178s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:19:49+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:19:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001579s ]
+[ 2019-05-29T17:20:13+08:00 ][ error ] [1]Uncaught TypeError: Argument 1 passed to Hanson\Vbot\Foundation\ExceptionHandler::report() must be an instance of Exception, instance of Error given, called in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php on line 133 and defined in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58
+Stack trace:
+#0 /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php(133): Hanson\Vbot\Foundation\ExceptionHandler->report(Object(Error))
+#1 [internal function]: Hanson\Vbot\Foundation\ExceptionHandler->handleException(Object(Error))
+#2 {main}
+  thrown[/Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58]
+[ 2019-05-29T17:25:43+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000195s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:25:43+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:25:43+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001476s ]
+[ 2019-05-29T17:26:32+08:00 ][ error ] [1]Uncaught TypeError: Argument 1 passed to Hanson\Vbot\Foundation\ExceptionHandler::report() must be an instance of Exception, instance of Error given, called in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php on line 133 and defined in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58
+Stack trace:
+#0 /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php(133): Hanson\Vbot\Foundation\ExceptionHandler->report(Object(Error))
+#1 [internal function]: Hanson\Vbot\Foundation\ExceptionHandler->handleException(Object(Error))
+#2 {main}
+  thrown[/Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58]
+[ 2019-05-29T17:28:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000138s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:28:37+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:28:37+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000817s ]
+[ 2019-05-29T17:34:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000142s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:34:49+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:34:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001266s ]
+[ 2019-05-29T17:35:13+08:00 ][ error ] [1]Uncaught TypeError: Argument 1 passed to Hanson\Vbot\Foundation\ExceptionHandler::report() must be an instance of Exception, instance of Error given, called in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php on line 133 and defined in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58
+Stack trace:
+#0 /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php(133): Hanson\Vbot\Foundation\ExceptionHandler->report(Object(Error))
+#1 [internal function]: Hanson\Vbot\Foundation\ExceptionHandler->handleException(Object(Error))
+#2 {main}
+  thrown[/Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58]
+[ 2019-05-29T17:57:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000148s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:57:05+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:57:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001229s ]
+[ 2019-05-29T17:58:01+08:00 ][ error ] [1]Uncaught TypeError: Argument 1 passed to Hanson\Vbot\Foundation\ExceptionHandler::report() must be an instance of Exception, instance of Error given, called in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php on line 133 and defined in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58
+Stack trace:
+#0 /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php(133): Hanson\Vbot\Foundation\ExceptionHandler->report(Object(Error))
+#1 [internal function]: Hanson\Vbot\Foundation\ExceptionHandler->handleException(Object(Error))
+#2 {main}
+  thrown[/Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58]
+[ 2019-05-29T17:59:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000150s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T17:59:04+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T17:59:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001465s ]
+[ 2019-05-29T17:59:39+08:00 ][ error ] [1]Uncaught TypeError: Argument 1 passed to Hanson\Vbot\Foundation\ExceptionHandler::report() must be an instance of Exception, instance of Error given, called in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php on line 133 and defined in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58
+Stack trace:
+#0 /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php(133): Hanson\Vbot\Foundation\ExceptionHandler->report(Object(Error))
+#1 [internal function]: Hanson\Vbot\Foundation\ExceptionHandler->handleException(Object(Error))
+#2 {main}
+  thrown[/Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58]
+[ 2019-05-29T18:10:47+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000195s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T18:10:47+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T18:10:47+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001064s ]
+[ 2019-05-29T18:11:12+08:00 ][ error ] [1]Uncaught TypeError: Argument 1 passed to Hanson\Vbot\Foundation\ExceptionHandler::report() must be an instance of Exception, instance of Error given, called in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php on line 133 and defined in /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58
+Stack trace:
+#0 /Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php(133): Hanson\Vbot\Foundation\ExceptionHandler->report(Object(Error))
+#1 [internal function]: Hanson\Vbot\Foundation\ExceptionHandler->handleException(Object(Error))
+#2 {main}
+  thrown[/Users/luodiao/Sites/admin/vendor/vbot/vendor/hanson/vbot/src/Foundation/ExceptionHandler.php:58]
+[ 2019-05-29T18:13:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000139s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T18:13:17+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T18:13:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001227s ]
+[ 2019-05-29T18:38:51+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000145s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-29T18:38:51+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-29T18:38:51+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000841s ]

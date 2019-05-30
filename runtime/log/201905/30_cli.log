@@ -1,0 +1,285 @@
+[ 2019-05-30T09:18:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000163s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T09:18:05+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T09:18:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002146s ]
+[ 2019-05-30T09:18:05+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T09:19:41+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001104s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T09:19:41+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.004848s ]
+[ 2019-05-30T09:19:41+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '你好' LIMIT 1 [ RunTime:0.000750s ]
+[ 2019-05-30T09:19:49+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深' LIMIT 1 [ RunTime:0.000591s ]
+[ 2019-05-30T09:20:29+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '你叫什么名字' LIMIT 1 [ RunTime:0.000585s ]
+[ 2019-05-30T09:22:46+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000129s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T09:22:46+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T09:22:46+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001187s ]
+[ 2019-05-30T09:22:46+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T09:23:10+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000168s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T09:23:10+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T09:23:10+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001570s ]
+[ 2019-05-30T09:23:10+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T09:23:30+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000766s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T09:23:30+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.005127s ]
+[ 2019-05-30T09:23:30+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深' LIMIT 1 [ RunTime:0.000500s ]
+[ 2019-05-30T09:27:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '雕哥' LIMIT 1 [ RunTime:0.000730s ]
+[ 2019-05-30T09:30:52+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '请教你一个问题' LIMIT 1 [ RunTime:0.000548s ]
+[ 2019-05-30T09:34:39+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '你叫什么名字' LIMIT 1 [ RunTime:0.000744s ]
+[ 2019-05-30T09:35:02+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '请教你一个问题' LIMIT 1 [ RunTime:0.000702s ]
+[ 2019-05-30T09:35:09+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '雕哥' LIMIT 1 [ RunTime:0.000797s ]
+[ 2019-05-30T09:35:18+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '你好' LIMIT 1 [ RunTime:0.000796s ]
+[ 2019-05-30T09:35:28+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深' LIMIT 1 [ RunTime:0.000737s ]
+[ 2019-05-30T09:35:53+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '我要加群' LIMIT 1 [ RunTime:0.000780s ]
+[ 2019-05-30T09:41:45+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '你好' LIMIT 1 [ RunTime:0.000846s ]
+[ 2019-05-30T09:41:57+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深' LIMIT 1 [ RunTime:0.000604s ]
+[ 2019-05-30T09:42:25+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深好帅' LIMIT 1 [ RunTime:0.000640s ]
+[ 2019-05-30T09:42:39+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '请教你一个问题' LIMIT 1 [ RunTime:0.000642s ]
+[ 2019-05-30T09:42:47+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '你叫什么名字' LIMIT 1 [ RunTime:0.000624s ]
+[ 2019-05-30T09:43:01+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '我要加群' LIMIT 1 [ RunTime:0.000963s ]
+[ 2019-05-30T09:44:21+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '厉害' LIMIT 1 [ RunTime:0.000734s ]
+[ 2019-05-30T09:44:35+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '你好' LIMIT 1 [ RunTime:0.000822s ]
+[ 2019-05-30T09:55:16+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '到家了，崽睡着了' LIMIT 1 [ RunTime:0.000747s ]
+[ 2019-05-30T09:55:32+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '坐公交车省了10块，特别近，就在社区后面一点' LIMIT 1 [ RunTime:0.000564s ]
+[ 2019-05-30T10:00:19+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '没多远啊，我看前面就有一个十字路口' LIMIT 1 [ RunTime:0.000870s ]
+[ 2019-05-30T10:21:39+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '哭了一下' LIMIT 1 [ RunTime:0.000745s ]
+[ 2019-05-30T10:21:45+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '还好' LIMIT 1 [ RunTime:0.000533s ]
+[ 2019-05-30T10:22:53+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '没有' LIMIT 1 [ RunTime:0.000562s ]
+[ 2019-05-30T10:23:02+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '补觉了' LIMIT 1 [ RunTime:0.000913s ]
+[ 2019-05-30T10:23:26+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '感觉不需要' LIMIT 1 [ RunTime:0.000737s ]
+[ 2019-05-30T10:29:25+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '哟呵' LIMIT 1 [ RunTime:0.000730s ]
+[ 2019-05-30T15:48:34+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000135s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T15:48:34+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T15:48:34+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000884s ]
+[ 2019-05-30T15:48:34+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T15:48:34+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001011s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T15:48:34+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'new_keyword' [ RunTime:0.000661s ]
+[ 2019-05-30T15:48:34+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 't_new_keyword' [ RunTime:0.000512s ]
+[ 2019-05-30T15:48:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000134s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T15:48:40+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T15:48:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000677s ]
+[ 2019-05-30T15:48:40+08:00 ][ error ] [0]Fatal error: Class 'app\admin\model\NewKeyword' not found[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:24]
+[ 2019-05-30T15:49:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000135s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T15:49:12+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T15:49:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001179s ]
+[ 2019-05-30T15:49:12+08:00 ][ error ] [0]Fatal error: Class 'app\admin\model\NewKeyword' not found[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:24]
+[ 2019-05-30T15:49:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000141s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T15:49:35+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T15:49:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001079s ]
+[ 2019-05-30T15:49:35+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001289s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'new_keyword' [ RunTime:0.000608s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 't_new_keyword' [ RunTime:0.000497s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'admin' AND table_name = 't_new_keyword' ORDER BY ORDINAL_POSITION [ RunTime:0.003965s ]
+[ 2019-05-30T15:49:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000143s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T15:49:35+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T15:49:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000685s ]
+[ 2019-05-30T15:49:35+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T15:49:35+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T15:49:35+08:00 ][ info ] [ LANG ] /Users/luodiao/Sites/admin/application/admin/lang/zh-cn.php
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001997s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.002442s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'new_keyword' LIMIT 1 [ RunTime:0.000487s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/index' LIMIT 1 [ RunTime:0.000342s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/add' LIMIT 1 [ RunTime:0.000291s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/edit' LIMIT 1 [ RunTime:0.000332s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/del' LIMIT 1 [ RunTime:0.000296s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `t_auth_rule` WHERE  `name` = 'new_keyword/multi' LIMIT 1 [ RunTime:0.000295s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1559202575  WHERE  `id` = 305 [ RunTime:0.001047s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1559202575  WHERE  `id` = 306 [ RunTime:0.000334s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1559202575  WHERE  `id` = 307 [ RunTime:0.000333s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1559202575  WHERE  `id` = 308 [ RunTime:0.000284s ]
+[ 2019-05-30T15:49:35+08:00 ][ sql ] [ SQL ] UPDATE `t_auth_rule`  SET `pid`=304,`name`='new_keyword/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1559202575  WHERE  `id` = 309 [ RunTime:0.000324s ]
+[ 2019-05-30T15:49:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000133s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T15:49:41+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T15:49:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001077s ]
+[ 2019-05-30T15:49:41+08:00 ][ error ] [0]Parse error: syntax error, unexpected 'function' (T_FUNCTION), expecting '('[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:127]
+[ 2019-05-30T15:51:15+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000150s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T15:51:15+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T15:51:15+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000859s ]
+[ 2019-05-30T15:51:15+08:00 ][ error ] [0]Parse error: syntax error, unexpected 'function' (T_FUNCTION), expecting '('[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:127]
+[ 2019-05-30T15:51:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000152s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T15:51:31+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T15:51:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001207s ]
+[ 2019-05-30T15:51:31+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T15:51:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000147s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T15:51:53+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T15:51:53+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000763s ]
+[ 2019-05-30T15:51:53+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:22:24+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000134s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:22:24+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:22:24+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000863s ]
+[ 2019-05-30T16:22:24+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:22:47+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000132s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:22:47+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:22:47+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001202s ]
+[ 2019-05-30T16:22:47+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:23:15+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000813s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:23:15+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.005398s ]
+[ 2019-05-30T16:23:15+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深' LIMIT 1 [ RunTime:0.000437s ]
+[ 2019-05-30T16:23:28+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深好帅' LIMIT 1 [ RunTime:0.000696s ]
+[ 2019-05-30T16:23:28+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000512s ]
+[ 2019-05-30T16:23:41+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '不行' LIMIT 1 [ RunTime:0.000814s ]
+[ 2019-05-30T16:23:41+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000502s ]
+[ 2019-05-30T16:23:56+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智 鲁深 智深' LIMIT 1 [ RunTime:0.000740s ]
+[ 2019-05-30T16:23:56+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000507s ]
+[ 2019-05-30T16:24:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000152s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:24:35+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:24:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001088s ]
+[ 2019-05-30T16:24:35+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:25:01+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000807s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:25:01+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.004659s ]
+[ 2019-05-30T16:25:01+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深' LIMIT 1 [ RunTime:0.000439s ]
+[ 2019-05-30T16:25:09+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深好帅' LIMIT 1 [ RunTime:0.000815s ]
+[ 2019-05-30T16:25:09+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000471s ]
+[ 2019-05-30T16:29:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000145s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:29:33+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:29:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001096s ]
+[ 2019-05-30T16:29:33+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:30:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000135s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:30:41+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:30:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001425s ]
+[ 2019-05-30T16:30:41+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:31:02+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000137s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:31:02+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:31:02+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000725s ]
+[ 2019-05-30T16:31:02+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:31:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000137s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:31:12+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:31:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000740s ]
+[ 2019-05-30T16:31:12+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:31:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000908s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:31:40+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.004658s ]
+[ 2019-05-30T16:31:40+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深' LIMIT 1 [ RunTime:0.000437s ]
+[ 2019-05-30T16:31:49+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深好帅啊' LIMIT 1 [ RunTime:0.000767s ]
+[ 2019-05-30T16:31:49+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000574s ]
+[ 2019-05-30T16:33:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000174s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:33:07+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:33:07+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001318s ]
+[ 2019-05-30T16:33:07+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:33:20+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000132s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:33:20+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:33:20+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001487s ]
+[ 2019-05-30T16:33:20+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:33:44+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000847s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:33:44+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.004227s ]
+[ 2019-05-30T16:33:44+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深' LIMIT 1 [ RunTime:0.000449s ]
+[ 2019-05-30T16:33:50+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深好' LIMIT 1 [ RunTime:0.000754s ]
+[ 2019-05-30T16:33:50+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000688s ]
+[ 2019-05-30T16:35:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000184s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:35:55+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:35:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001385s ]
+[ 2019-05-30T16:35:55+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:35:55+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001092s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:35:55+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.002719s ]
+[ 2019-05-30T16:35:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000567s ]
+[ 2019-05-30T16:36:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000134s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:36:11+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:36:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001467s ]
+[ 2019-05-30T16:36:11+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:36:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000152s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:36:44+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:36:44+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001150s ]
+[ 2019-05-30T16:36:44+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:36:44+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001050s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:36:44+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.002796s ]
+[ 2019-05-30T16:36:44+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000425s ]
+[ 2019-05-30T16:36:44+08:00 ][ error ] [0]Fatal error: Call to a member function toArray() on array[/Users/luodiao/Sites/admin/application/admin/command/Vbot.php:31]
+[ 2019-05-30T16:36:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000146s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:36:55+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:36:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000772s ]
+[ 2019-05-30T16:36:55+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:36:55+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001057s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:36:55+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.002990s ]
+[ 2019-05-30T16:36:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000417s ]
+[ 2019-05-30T16:37:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000136s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:37:29+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:37:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001264s ]
+[ 2019-05-30T16:37:29+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:37:29+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001579s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:37:29+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.002690s ]
+[ 2019-05-30T16:37:29+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000420s ]
+[ 2019-05-30T16:37:54+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000152s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:37:54+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:37:54+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001157s ]
+[ 2019-05-30T16:37:54+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:37:54+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001212s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:37:54+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.003391s ]
+[ 2019-05-30T16:37:54+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000491s ]
+[ 2019-05-30T16:38:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000135s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:38:12+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:38:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001495s ]
+[ 2019-05-30T16:38:12+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:38:12+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001072s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:38:12+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.003547s ]
+[ 2019-05-30T16:38:12+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000432s ]
+[ 2019-05-30T16:38:25+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000159s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:38:25+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:38:25+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001600s ]
+[ 2019-05-30T16:38:25+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:38:25+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001205s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:38:25+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.002680s ]
+[ 2019-05-30T16:38:25+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000462s ]
+[ 2019-05-30T16:38:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000178s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:38:55+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:38:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001452s ]
+[ 2019-05-30T16:38:55+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:38:55+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000987s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:38:55+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.002962s ]
+[ 2019-05-30T16:38:55+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000422s ]
+[ 2019-05-30T16:39:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000132s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:39:31+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:39:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001312s ]
+[ 2019-05-30T16:39:31+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:39:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000157s ]
+[ info ] [ LOG ] INIT File
+[ 2019-05-30T16:39:57+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-05-30T16:39:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001337s ]
+[ 2019-05-30T16:39:57+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-05-30T16:40:20+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000838s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ 2019-05-30T16:40:20+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_keyword` [ RunTime:0.004825s ]
+[ 2019-05-30T16:40:20+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深' LIMIT 1 [ RunTime:0.000430s ]
+[ 2019-05-30T16:40:30+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '鲁智深好帅' LIMIT 1 [ RunTime:0.000745s ]
+[ 2019-05-30T16:40:30+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000647s ]
+[ 2019-05-30T16:42:08+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '我讨厌鲁智深' LIMIT 1 [ RunTime:0.000746s ]
+[ 2019-05-30T16:42:08+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000563s ]
+[ 2019-05-30T16:43:25+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '厉害' LIMIT 1 [ RunTime:0.000746s ]
+[ 2019-05-30T16:43:25+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000604s ]
+[ 2019-05-30T16:45:35+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '谁是鲁智深' LIMIT 1 [ RunTime:0.000566s ]
+[ 2019-05-30T16:45:35+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000448s ]
+[ 2019-05-30T16:45:50+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '你好吗' LIMIT 1 [ RunTime:0.000601s ]
+[ 2019-05-30T16:45:50+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000409s ]
+[ 2019-05-30T16:46:09+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '雕哥厉害[强]' LIMIT 1 [ RunTime:0.000568s ]
+[ 2019-05-30T16:46:09+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000488s ]
+[ 2019-05-30T16:46:33+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '可以请教你一个问题吗' LIMIT 1 [ RunTime:0.000819s ]
+[ 2019-05-30T16:46:33+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000463s ]
+[ 2019-05-30T16:46:59+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '你好不好' LIMIT 1 [ RunTime:0.000670s ]
+[ 2019-05-30T16:46:59+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000539s ]
+[ 2019-05-30T16:48:04+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` WHERE  `key` = '你真好' LIMIT 1 [ RunTime:0.000664s ]
+[ 2019-05-30T16:48:04+08:00 ][ sql ] [ SQL ] SELECT * FROM `t_new_keyword` ORDER BY `weigh` DESC [ RunTime:0.000493s ]

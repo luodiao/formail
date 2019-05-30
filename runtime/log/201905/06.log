@@ -1,0 +1,297 @@
+---------------------------------------------------------------
+[ 2019-05-06T17:48:01+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000503s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.002314s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = 'a30c7376153b0d23394216a5089c80d32c10472a' LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.001980s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000324s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.002121s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:48:23+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000420s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.002221s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = 'a30c7376153b0d23394216a5089c80d32c10472a' LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002337s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000369s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.001593s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:48:24+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000445s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.003039s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = 'a30c7376153b0d23394216a5089c80d32c10472a' LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.003175s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000382s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.001691s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000366s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:48:58+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.002511s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:49:06+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000683s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.003486s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000563s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:50:24+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000525s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.002278s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:52:13+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.002691s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:52:31+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000527s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.002029s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:52:44+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.001914s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000362s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:53:51+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000444s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.002610s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:53:56+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000486s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.003367s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000448s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:58:47+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000434s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.002249s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000427s ]
+---------------------------------------------------------------
+[ 2019-05-06T17:59:43+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.002663s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000364s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:04:57+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000469s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.002483s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000416s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:08:10+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000394s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.002394s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000420s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:12:08+08:00 ] 127.0.0.1 GET admin.com/index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000471s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.001878s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000354s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:13:41+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000455s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002344s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000583s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:13:48+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000495s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002976s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000599s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:01+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000485s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002939s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000666s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:02+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000458s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002138s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000572s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:03+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.003073s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000521s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:03+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000466s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002990s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000584s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:04+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000511s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.003089s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000525s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:04+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000467s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.003188s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000652s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:05+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000451s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002690s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000573s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:05+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000461s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002841s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000708s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:06+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000443s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.003484s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:07+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000474s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.001847s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000662s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:07+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000424s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002760s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000691s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:08+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000471s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000566s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:08+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.003154s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000686s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:09+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000444s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002807s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000697s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:13+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000471s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002572s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000569s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:13+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002349s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000576s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:13+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000391s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.003313s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000536s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:13+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002580s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000708s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:14+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000467s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002361s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000521s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:15:14+08:00 ] 127.0.0.1 POST admin.com/index/user/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000497s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002628s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:25:44+08:00 ] 127.0.0.1 POST admin.com/index/user/register.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000490s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002771s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `username` = 'luodiao' LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `email` = 'luodiao128@163.com' LIMIT 1 [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `mobile` = '13671119300' LIMIT 1 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] INSERT INTO `t_user` (`username` , `password` , `email` , `mobile` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `createtime` , `updatetime`) VALUES ('luodiao' , '88c39df5dad4f718d8187ae4cb56b8ce' , 'luodiao128@163.com' , '13671119300' , 1 , 0 , '' , 'luodiao' , 'DSQ4zv' , 1557138344 , '127.0.0.1' , 1557138344 , '127.0.0.1' , 1557138344 , 'normal' , 1557138344 , 1557138344) [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.002713s ]
+[ sql ] [ SQL ] INSERT INTO `t_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('8291cf48ee65f5b684c5d58bf6704b2db19e078c' , 2 , 1557138344 , 1559730344) [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:25:45+08:00 ] 127.0.0.1 GET admin.com/index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000486s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.002639s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = '8291cf48ee65f5b684c5d58bf6704b2db19e078c' LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002280s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000488s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:25:45+08:00 ] 127.0.0.1 GET admin.com/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.002713s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = '8291cf48ee65f5b684c5d58bf6704b2db19e078c' LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002677s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000577s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:25:57+08:00 ] 127.0.0.1 GET admin.com/index/user/profile.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000523s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.002118s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = '8291cf48ee65f5b684c5d58bf6704b2db19e078c' LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.001772s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000556s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:25:57+08:00 ] 127.0.0.1 GET admin.com/index/ajax/lang?callback=define&controllername=user&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000584s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.002363s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = '8291cf48ee65f5b684c5d58bf6704b2db19e078c' LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002739s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000552s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:26:05+08:00 ] 127.0.0.1 POST admin.com/api/validate/check_mobile_available.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000506s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.004564s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = '8291cf48ee65f5b684c5d58bf6704b2db19e078c' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.003292s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_user` WHERE  `mobile` = '13671119300'  AND `id` <> 2 LIMIT 1 [ RunTime:0.000367s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:26:05+08:00 ] 127.0.0.1 POST admin.com/api/sms/send.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000451s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.003646s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = '8291cf48ee65f5b684c5d58bf6704b2db19e078c' LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.003081s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_sms` [ RunTime:0.003234s ]
+[ sql ] [ SQL ] SELECT * FROM `t_sms` WHERE  `mobile` = '13671119300'  AND `event` = 'changemobile' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_sms` WHERE  `ip` = '127.0.0.1'  AND `createtime` >  1557134765 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `mobile` = '13671119300' LIMIT 1 [ RunTime:0.000669s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:26:08+08:00 ] 127.0.0.1 POST admin.com/api/sms/send.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.002551s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = '8291cf48ee65f5b684c5d58bf6704b2db19e078c' LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.001767s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_sms` [ RunTime:0.002271s ]
+[ sql ] [ SQL ] SELECT * FROM `t_sms` WHERE  `mobile` = '13671119300'  AND `event` = 'changemobile' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_sms` WHERE  `ip` = '127.0.0.1'  AND `createtime` >  1557134768 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `mobile` = '13671119300' LIMIT 1 [ RunTime:0.000407s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:27:41+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.003854s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = '8291cf48ee65f5b684c5d58bf6704b2db19e078c' LIMIT 1 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.004815s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000862s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.003482s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000518s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:35:41+08:00 ] 127.0.0.1 GET admin.com/index/user/logout.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000409s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.002382s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = '8291cf48ee65f5b684c5d58bf6704b2db19e078c' LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.002980s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] DELETE FROM `t_user_token`    WHERE  `token` = '8291cf48ee65f5b684c5d58bf6704b2db19e078c' [ RunTime:0.000513s ]
+---------------------------------------------------------------
+[ 2019-05-06T18:35:44+08:00 ] 127.0.0.1 GET admin.com/index/user/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user_token` [ RunTime:0.002094s ]
+[ sql ] [ SQL ] SELECT * FROM `t_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000372s ]

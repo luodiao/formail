@@ -1,0 +1,5 @@
+---------------------------------------------------------------
+[ 2019-05-07T09:27:25+08:00 ] 127.0.0.1 GET admin.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000480s ] mysql:host=127.0.0.1;dbname=admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_new_banner` [ RunTime:0.002424s ]
+[ sql ] [ SQL ] SELECT * FROM `t_new_banner` WHERE  `status` = '1' [ RunTime:0.000392s ]
