@@ -109,10 +109,10 @@ class NewWechatUser extends Backend
                     break;
                 case '1':
                     
-                    $savePath = APP_PATH . '/../Public/qrcode/';
+                    $savePath = APP_PATH . '/../public/qrcode/';
                     $webPath = '/qrcode/';
                     $qrData = 'https://login.weixin.qq.com/l/'.$list->uuid;
-                    $qrLevel = 'H';
+                    $qrLevel = 
                     $qrSize = '8';
                     $savePrefix = 'NickBai';
                     if($filename = createQRcode($savePath, $qrData, $qrLevel, $qrSize, $savePrefix)){
