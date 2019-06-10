@@ -81,7 +81,7 @@ class NewWechatUser extends Backend
                 }
                 if ($result !== false) {
                     $cmd = "cd ".ROOT_PATH." && ./vbot.sh ".ROOT_PATH." ".$params['user_id']." ".$params['port'];
-                    system($cmd,$retval);
+                    system($cmd);
 
                     $this->success();
                 } else {
@@ -164,9 +164,7 @@ class NewWechatUser extends Backend
         $list->status = 0;
         $list->save();
         $cmd = "cd ".ROOT_PATH." && ./vbot.sh ".ROOT_PATH." ".$list->user_id." ".$list->port;
-        echo $cmd;
-        system($cmd,$retval);
-
+        system($cmd);
         $this->success();
     }
 

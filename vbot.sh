@@ -12,5 +12,5 @@ userid=$2
 port=$3
 
 cd $dir
-nohup php think Vbot $userid $port > vbot.log &
+nohup php think Vbot $userid $port 1>vbot.log 2>vbot_error.log &
 
