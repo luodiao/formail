@@ -240,6 +240,10 @@ class ComposerStaticInit93719bb1aa6fa692188d6b4db5c12d54
             array (
                 0 => __DIR__ . '/..' . '/pimple/pimple/src',
             ),
+            'PHPQRCode' => 
+            array (
+                0 => __DIR__ . '/..' . '/aferrandini/phpqrcode/lib',
+            ),
         ),
         'D' => 
         array (

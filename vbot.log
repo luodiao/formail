@@ -1,0 +1,231 @@
+Date Crontab job start...
+[2019-06-06 18:57:47][INFO] cleaning useless cookies.
+
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+[2019-06-06 18:57:50][INFO] please scan the qrCode with wechat.
+[2019-06-06 18:58:01][INFO] please confirm login in wechat.
+[2019-06-06 18:58:05][INFO] current session: vbot_1
+[2019-06-06 18:58:05][INFO] init begin.
+[2019-06-06 18:58:06][INFO] current user's nickname:歪小歪
+[2019-06-06 18:58:06][INFO] current user's username:@59f8488701ffa393cb12875497bb6187
+[2019-06-06 18:58:06][INFO] current user's uin:398102200
+[2019-06-06 18:58:06][INFO] init success.
+[2019-06-06 18:58:06][INFO] init contacts begin.
+[2019-06-06 18:58:13][MESSAGE] 大盘鸡是什么你不知道么
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:58:13][MESSAGE] 芝麻糊
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:58:13][MESSAGE] 知道！
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:58:15][MESSAGE] 大盘鸡
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:58:16][MESSAGE] [点击事件]
+string(6) "System"
+string(5) "touch"
+[2019-06-06 18:58:22][MESSAGE] 吃完之后才下面
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:58:29][MESSAGE] [语音]
+string(5) "Group"
+string(5) "voice"
+[2019-06-06 18:58:29][MESSAGE] [图片]
+string(5) "Group"
+string(5) "image"
+[2019-06-06 18:58:30][MESSAGE] 雕哥
+string(6) "Friend"
+string(4) "text"
+[2019-06-06 18:58:32][MESSAGE] [语音]
+string(5) "Group"
+string(5) "voice"
+[2019-06-06 18:58:33][MESSAGE] 答：基本不可能
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:58:34][MESSAGE] [点击事件]
+string(6) "System"
+string(5) "touch"
+[2019-06-06 18:58:37][MESSAGE] lol不会玩儿
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:58:42][MESSAGE] 老狼大盘鸡
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:07][MESSAGE] 大盘鸡和大菠萝
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:12][MESSAGE] 1 、确实写到心口
+2、有福利  让他们觉得分享出去有面子
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:15][MESSAGE] 换子弹太慢了
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:18][MESSAGE] [图片]
+string(5) "Group"
+string(5) "image"
+[2019-06-06 18:59:18][MESSAGE] 我忘了那个枪原来叫什么了
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:24][MESSAGE] 这种东西吧
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:27][MESSAGE] 那我就放心了
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:30][MESSAGE] 47发子弹那个
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:33][MESSAGE] 不是我一个人不会打麻将
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:39][MESSAGE] 么得必要
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:43][MESSAGE] cf。以前叫 银色杀手
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:52][MESSAGE] 但是大菠萝一百发子弹直接扫，别人
+string(5) "Group"
+string(4) "text"
+[2019-06-06 18:59:57][MESSAGE] @五更  你应该吃鸡 可以吧
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:00:03][MESSAGE] M4加上快速扩容弹夹
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:00:04][MESSAGE] "茜茜🍥"邀请"安。"加入了群聊
+string(5) "Group"
+string(12) "group_change"
+[2019-06-06 19:00:11][MESSAGE] 40发子弹也够用了
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:00:16][MESSAGE] m4 满配。就不错啊
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:00:30][MESSAGE] @北京-tom [可怜]哭唧唧 
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:00:33][MESSAGE] 让他们觉得分享出去有面子 这个很重要
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:00:34][MESSAGE] 对面换弹时间够扫下来了除非枪法真的菜
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:00:39][MESSAGE] @黑米+管理员 嗯是的 
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:00:53][MESSAGE] 我喜欢upm9加消音
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:01:03][MESSAGE] 好吧 让推文成为用户的社交货币💵👬
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:01:16][MESSAGE] M4满配本命枪
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:01:17][MESSAGE] 但是威力小，决赛圈不适合
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:01:30][MESSAGE] 我一般 就狙 消音
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:01:34][MESSAGE] [点击事件]
+string(6) "System"
+string(5) "touch"
+[2019-06-06 19:01:42][MESSAGE] [点击事件]
+string(6) "System"
+string(5) "touch"
+[2019-06-06 19:01:47][MESSAGE] 进站。m16 三连发
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:01:58][MESSAGE] sks 消音
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:02:00][MESSAGE] 就这】
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:02:09][MESSAGE] 如果不这样的话，也没有二次传播
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:02:20][MESSAGE] 但是 有一段时间 不玩了。 技术应该还在
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:02:28][MESSAGE] upm9贴脸可以打，中远距离子弹都坠完了打不动[捂脸]
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:02:36][MESSAGE] 什么类型的号 企业号基本上是发布也是只对同事，领导可见
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:02:39][MESSAGE] 但我们为公司写的商业文章 并不是每篇都能那么让人有面子。。。。。。。。。[心碎]【内伤】群里的小伙伴都遇到过这个难题吧
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:02:55][MESSAGE] @北京-tom 哈哈哈哈哈哈兄弟你瞎说什么大实话
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:03:01][MESSAGE] 你们捡到墙。 可以在对着墙扫一下。感受下弹道
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:03:10][MESSAGE] [表情]
+string(5) "Group"
+string(8) "emoticon"
+[2019-06-06 19:03:10][MESSAGE] 你就知道这枪怎么用了
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:03:17][MESSAGE] 不懂
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:03:18][MESSAGE] sks很可以
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:03:19][MESSAGE] 哈哈哈哈哈哈哈哈哈
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:03:27][MESSAGE] 我拿sks灭队过
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:03:38][MESSAGE] 爬在山坡上
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:03:41][MESSAGE] "茜茜🍥"邀请"六六"加入了群聊
+string(5) "Group"
+string(12) "group_change"
+[2019-06-06 19:03:44][MESSAGE] 我暂时还没有消息，今天下午才提交的
+string(4) "Self"
+string(4) "text"
+[2019-06-06 19:03:49][MESSAGE] sks加红点
+string(5) "Group"
+string(4) "text"
+[2019-06-06 19:03:56][INFO] vbot exit normally.
+Build Successed!
+成功退出登录111

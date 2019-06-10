@@ -11,7 +11,7 @@ use think\Exception;
 use think\Config;
 
 use myvbot;
-
+use think\console\input\Argument;
 class Vbot extends Command
 {
     //相关机器人配置
@@ -22,19 +22,21 @@ class Vbot extends Command
         $this->setName('Vbot')->setDescription("计划任务 Vbot");
         $this->config = Config::get('vbotconfig');
         $this->model = new \app\admin\model\NewKeyword;
-
+        $this->usermodel = new \app\admin\model\NewWechatUser;
+        $this->addArgument('session', Argument::REQUIRED, "The name of the class");
+        $this->addArgument('port', Argument::REQUIRED, "The name of the class");
     }
 
     protected function execute(Input $input, Output $output)
     {
+        $userid = $input->getArgument('session');
+        $port = $input->getArgument('port');
+        $this->config['session'] = "vbot_".$userid."_".$port;
+        $this->config['swoole']['port'] = $port;
         $output->writeln('Date Crontab job start...');
-        var_dump($this->config);
         vendor('vbot.Puppet');
         $Puppet = new \Puppet($this->config);
-        $lala1 = 245;
         $Puppet->messageHandler->setHandler(function ($message) use ($Puppet){
-            var_dump($message['fromType']);
-            var_dump($message['type']);
             //添加好友
             if ($message['type'] === 'request_friend') {
                 // 同意添加好友
@@ -128,7 +130,58 @@ class Vbot extends Command
             
             // Hanson\Vbot\Message\Text::send($message['from']['UserName'], '你好啊，我在测试消息');
         });
+    
+        //重新写入二维码
+        $Puppet->observer->setQrCodeObserver(function($qrCodeUrl) use ($Puppet,$userid,$port){
+            //重新写入用户uuid
+            // $data = array(
+            //     "uuid" => $Puppet->config['server.uuid'],
+            //     "user_id" => $userid,
+            //     "port" => $port,
+            //     );
+            $vbotUserObj = $this->usermodel->where('user_id',$userid)->where('port',$port)->find();
+            if(!$vbotUserObj){
+                exit("未能找到启动脚本");
+            }
+            $vbotUserObj->status = 1;
+            $vbotUserObj->qrcodetime = time();
+            $vbotUserObj->uuid = $Puppet->config['server.uuid'];
+            $vbotUserObj->save();
+        });
+        
+        //登录成功 --> 记录用户信息
+        $Puppet->observer->setLoginSuccessObserver(function() use ($Puppet,$userid,$port){
+            $vbotUserObj = $this->usermodel->where('user_id',$userid)->where('port',$port)->find();
+            if(!$vbotUserObj){
+                exit("未能找到启动脚本1");
+            }
+            if($Puppet->myself->uin == '' || !isset($Puppet->myself->uin) || strlen($Puppet->myself->uin) < 4 || $Puppet->myself->username == '' || !isset($Puppet->myself->username) || strlen($Puppet->myself->username) < 4){
+                $vbotUserObj->status = 3;
+                $vbotUserObj->save();
+                exit;
+            }else{
+                $vbotUserObj->status = 2;
+                $vbotUserObj->nickname = $Puppet->myself->nickname;
+                $vbotUserObj->username = $Puppet->myself->username;
+                $vbotUserObj->uin = $Puppet->myself->uin;
+                $vbotUserObj->save();
+            }
+        });
 
+        $Puppet->observer->setExitObserver(function()use ($userid,$port){
+            $vbotUsersObj = $this->usermodel->where('user_id',$userid)->where('port',$port)->find();
+            if(!$vbotUsersObj){
+                exit("未能找到启动脚本2");
+            }
+            $vbotUsersObj->status = 3;
+            if($vbotUsersObj->save()){
+                echo "成功";
+            }else{
+                echo "失败";
+            }
+            echo "退出登录111\n";
+
+        });
         $Puppet->server->serve();
         $output->info("Build Successed!");
     }

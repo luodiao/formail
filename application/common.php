@@ -362,3 +362,39 @@ if (!function_exists('hsv2rgb')) {
         ];
     }
 }
+function createQRcode($savePath, $qrData = 'PHP QR Code :)', $qrLevel = 'L', $qrSize = 4, $savePrefix = 'qrcode')
+{
+    if (!isset($savePath)) return '';
+    //设置生成png图片的路径
+    $PNG_TEMP_DIR = $savePath;
+
+    //检测并创建生成文件夹
+    if (!file_exists($PNG_TEMP_DIR)) {
+        mkdir($PNG_TEMP_DIR);
+    }
+    $filename = $PNG_TEMP_DIR . 'test.png';
+    $errorCorrectionLevel = 'L';
+    if (isset($qrLevel) && in_array($qrLevel, ['L', 'M', 'Q', 'H'])) {
+        $errorCorrectionLevel = $qrLevel;
+    }
+    $matrixPointSize = 4;
+    if (isset($qrSize)) {
+        $matrixPointSize = min(max((int)$qrSize, 1), 10);
+    }
+    if (isset($qrData)) {
+        if (trim($qrData) == '') {
+            die('data cannot be empty!');
+        }
+        //生成文件名 文件路径+图片名字前缀+md5(名称)+.png
+        $filename = $PNG_TEMP_DIR . $savePrefix . md5($qrData . '|' . $errorCorrectionLevel . '|' . $matrixPointSize) . '.png';
+        //开始生成
+        \PHPQRCode\QRcode::png($qrData, $filename, $errorCorrectionLevel, $matrixPointSize, 2);
+    } else {
+        //默认生成
+        \PHPQRCode\QRcode::png('PHP QR Code :)', $filename, $errorCorrectionLevel, $matrixPointSize, 2);
+    }
+    if (file_exists($PNG_TEMP_DIR . basename($filename)))
+        return basename($filename);
+    else
+        return FALSE;
+}
