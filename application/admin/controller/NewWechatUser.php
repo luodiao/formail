@@ -169,6 +169,8 @@ class NewWechatUser extends Backend
     }
 
     public function runwechat(){
+        $cmd = "cd /web/formail/ && ./vbot.sh /web/formail/ 1 7536";
+        system($cmd);
         echo 11111;exit;
     }
     //开启机器人
