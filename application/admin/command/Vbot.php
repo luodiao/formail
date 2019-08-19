@@ -74,25 +74,25 @@ class Vbot extends Command
 
             
             //判断是否是群消息
-            if($message['message'] == '我要加群' && $message['fromType'] != 'Group'){
-                // $members = 
-                $groupsList = $groups->getGroupsByNickname('雕雕测试群', $blur = false);
-                $Puppet->sendtext($message['from']['UserName'], "你好啊，小弟正在为您办理进群手续\n 请耐心等待...");
-                if(empty($groupsList)){
-                    $username[] = $message['from'];
-                    $username[] = $message['from'];
-                    $group = $groups->create($username);
+            // if($message['message'] == '我要加群' && $message['fromType'] != 'Group'){
+            //     // $members = 
+            //     $groupsList = $groups->getGroupsByNickname('雕雕测试群', $blur = false);
+            //     $Puppet->sendtext($message['from']['UserName'], "你好啊，小弟正在为您办理进群手续\n 请耐心等待...");
+            //     if(empty($groupsList)){
+            //         $username[] = $message['from'];
+            //         $username[] = $message['from'];
+            //         $group = $groups->create($username);
 
-                    $groups->setGroupName($group['UserName'],"雕雕测试群");
-                }else{
-                    $groups->addMember($groupsList['UserName'], $message['username']);
-                }
+            //         $groups->setGroupName($group['UserName'],"雕雕测试群");
+            //     }else{
+            //         $groups->addMember($groupsList['UserName'], $message['username']);
+            //     }
                 
-                sleep(2);
-                $Puppet->sendimages($groupsList['UserName'],'/Users/luodiao/Downloads/4b0976c6a7efce1b415b31f5a451f3deb58f6580.jpg');
-            }
+            //     sleep(2);
+            //     $Puppet->sendimages($groupsList['UserName'],'/Users/luodiao/Downloads/4b0976c6a7efce1b415b31f5a451f3deb58f6580.jpg');
+            // }
             
-            if($message['fromType'] != 'Group'){
+            if($message['fromType'] == 'Group'){
                 // 查询单个数据
                 $list = $this->model->where('key', $message['message'])->find();
                 if(!$list){
