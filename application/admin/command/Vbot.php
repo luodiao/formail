@@ -127,7 +127,7 @@ class Vbot extends Command
                         break;
                 }
                 $groupsList = $groups->getGroupsByNickname('splitVbot', $blur = false);
-                $Puppet->sendtext($message['from']['UserName'],"姑娘们，来客人了，快快出来~~~");
+                $Puppet->sendtext($groupsList['UserName'],"姑娘们，来客人了，快快出来~~~\n时间：".date('Y-m-d H:i:s',time())."\n 客户说：".$message['message']);
             }
             
             // Hanson\Vbot\Message\Text::send($message['from']['UserName'], '你好啊，我在测试消息');
