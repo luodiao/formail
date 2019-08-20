@@ -110,7 +110,8 @@ class Vbot extends Command
                         return;
                     }
                 }
-
+                $msgs = json_encode($message);
+                $Puppet->sendtext($message['from']['UserName'],$msgs);
                 switch ($list->type) {
                     case '0':
                         usleep(500000);
