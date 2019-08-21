@@ -94,22 +94,31 @@ class Vbot extends Command
             
             if($message['fromType'] == 'Group'){
                 // 查询单个数据
-                $list = $this->model->where('key', $message['message'])->find();
-                if(!$list){
-                    //如果不存在，查询全部数据进行筛选
-                    $list_select = $this->model
-                            ->order('weigh', 'desc')
-                            ->select();
-                    foreach ($list_select as $key => $value) {
-                        if(strpos($message['message'],$value->key) !==false){
-                            $list = $value;
-                            break;
-                        }
-                    }
-                    if(!$list){
-                        return;
+                $key_arr = array("商城","涨粉","裂变","任务宝","迁移");
+                $status_key = false;
+                foreach ($key_arr as $key => $value) {
+                    if(strpos($message['message'],$value) !== false){ 
+                         $status_key = true;
+                         break;
                     }
                 }
+                // $list = $this->model->where('key', $message['message'])->find();
+                // if(!$list){
+                //     return;
+                //     //如果不存在，查询全部数据进行筛选
+                //     $list_select = $this->model
+                //             ->order('weigh', 'desc')
+                //             ->select();
+                //     foreach ($list_select as $key => $value) {
+                //         if(strpos($message['message'],$value->key) !==false){
+                //             $list = $value;
+                //             break;
+                //         }
+                //     }
+                //     if(!$list){
+                //         return;
+                //     }
+                // }
                 switch ($list->type) {
                     case '0':
                         // usleep(500000);
@@ -125,8 +134,10 @@ class Vbot extends Command
                         # code...
                         break;
                 }
-                $groupsList = $groups->getGroupsByNickname('splitVbot', $blur = false);
-                $Puppet->sendtext($groupsList['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
+                if($status_key){
+                    $groupsList = $groups->getGroupsByNickname('splitVbot', $blur = false);
+                    $Puppet->sendtext($groupsList['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
+                }
             }
             
             // Hanson\Vbot\Message\Text::send($message['from']['UserName'], '你好啊，我在测试消息');
