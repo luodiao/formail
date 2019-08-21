@@ -49,11 +49,11 @@ class Vbot extends Command
                 return;
             }
             //裂变支持
-            if ($message['type'] === 'group_change') {
-                $Puppet->sendtext($message['from']['UserName'], 
-                  '欢迎新人 '.$message['invited'].PHP_EOL.'邀请人：'.$message['inviter']);
-                  return;
-            }
+            // if ($message['type'] === 'group_change') {
+            //     $Puppet->sendtext($message['from']['UserName'], 
+            //       '欢迎新人 '.$message['invited'].PHP_EOL.'邀请人：'.$message['inviter']);
+            //       return;
+            // }
 
             $groups = vbot('groups');
 
@@ -62,14 +62,14 @@ class Vbot extends Command
                 return;
             }elseif ($message['fromType'] == 'Group') {
                 #是群消息
-                if($message['message'] == '群主我不爱你了'){
-                    $groupsList = $groups->getGroupsByNickname('雕雕测试群', $blur = false);
-                    $groups->deleteMember($groupsList['UserName'], $message['username']);
-                    $Puppet->sendtext($message['from']['UserName'], 
-                  '欢迎新人 ');
-                  return;
-                    // Hanson\Vbot\Message\Text::send($message['from']['UserName'], "不爱我了吗，我还是想留住你，挽留这段感情[调皮]\n...");
-                }
+                // if($message['message'] == '群主我不爱你了'){
+                //     $groupsList = $groups->getGroupsByNickname('雕雕测试群', $blur = false);
+                //     $groups->deleteMember($groupsList['UserName'], $message['username']);
+                //     $Puppet->sendtext($message['from']['UserName'], 
+                //   '欢迎新人 ');
+                //   return;
+                //     // Hanson\Vbot\Message\Text::send($message['from']['UserName'], "不爱我了吗，我还是想留住你，挽留这段感情[调皮]\n...");
+                // }
             }
 
             
@@ -112,13 +112,13 @@ class Vbot extends Command
                 }
                 switch ($list->type) {
                     case '0':
-                        usleep(500000);
-                        $Puppet->sendtext($message['from']['UserName'],$list->desc);
+                        // usleep(500000);
+                        // $Puppet->sendtext($message['from']['UserName'],$list->desc);
                         break;
                     case '1':
-                        usleep(800000);
+                        // usleep(800000);
                         // $Puppet->sendimages($message['from']['UserName'],'/Users/luodiao/Downloads/4b0976c6a7efce1b415b31f5a451f3deb58f6580.jpg');
-                        $Puppet->sendimages($message['from']['UserName'],ROOT_PATH."public/".$list->image);
+                        // $Puppet->sendimages($message['from']['UserName'],ROOT_PATH."public/".$list->image);
                         break;
                     
                     default:
