@@ -119,21 +119,21 @@ class Vbot extends Command
                 //         return;
                 //     }
                 // }
-                switch ($list->type) {
-                    case '0':
-                        // usleep(500000);
-                        // $Puppet->sendtext($message['from']['UserName'],$list->desc);
-                        break;
-                    case '1':
-                        // usleep(800000);
-                        // $Puppet->sendimages($message['from']['UserName'],'/Users/luodiao/Downloads/4b0976c6a7efce1b415b31f5a451f3deb58f6580.jpg');
-                        // $Puppet->sendimages($message['from']['UserName'],ROOT_PATH."public/".$list->image);
-                        break;
+                // switch ($list->type) {
+                //     case '0':
+                //         // usleep(500000);
+                //         // $Puppet->sendtext($message['from']['UserName'],$list->desc);
+                //         break;
+                //     case '1':
+                //         // usleep(800000);
+                //         // $Puppet->sendimages($message['from']['UserName'],'/Users/luodiao/Downloads/4b0976c6a7efce1b415b31f5a451f3deb58f6580.jpg');
+                //         // $Puppet->sendimages($message['from']['UserName'],ROOT_PATH."public/".$list->image);
+                //         break;
                     
-                    default:
-                        # code...
-                        break;
-                }
+                //     default:
+                //         # code...
+                //         break;
+                // }
                 if($status_key){
                     $groupsList = $groups->getGroupsByNickname('splitVbot', $blur = false);
                     $Puppet->sendtext($groupsList['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
