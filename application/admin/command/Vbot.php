@@ -135,7 +135,7 @@ class Vbot extends Command
                 //         break;
                 // }
                 if($status_key){
-                    $groupsList = $groups->getGroupsByNickname('splitVbot', $blur = false);
+                    $groupsList = $groups->getGroupsByNickname('运营指南通知群', $blur = false);
                     $Puppet->sendtext($groupsList['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
                 }
             }
