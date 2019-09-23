@@ -81,7 +81,7 @@ class NewWechatUser extends Backend
                 }
                 if ($result !== false) {
                     $cmd = "cd ".ROOT_PATH." && ./vbot.sh ".ROOT_PATH." ".$params['user_id']." ".$params['port'];
-                    system($cmd);
+                     system($cmd,$retval);
 
                     $this->success();
                 } else {
@@ -164,13 +164,13 @@ class NewWechatUser extends Backend
         $list->status = 0;
         $list->save();
         $cmd = "cd ".ROOT_PATH." && ./vbot.sh ".ROOT_PATH." ".$list->user_id." ".$list->port;
-        system($cmd);
+         system($cmd,$retval);
         $this->success();
     }
 
     public function runwechat(){
         $cmd = "cd /web/formail/ && ./vbot.sh /web/formail/ 1 7536";
-        system($cmd);
+        system($cmd,$retval);
         echo 11111;exit;
     }
     //开启机器人
