@@ -105,7 +105,7 @@ class Vbot extends Command
 
                 $key_arr_editor = array("课程","写作","文案");
                 $status_key_for_editor = false;
-                foreach ($key_arr as $key => $value) {
+                foreach ($key_arr_editor as $key => $value) {
                     if(strpos($message['message'],$value) !== false){ 
                          $status_key_for_editor = true;
                          break;
