@@ -102,6 +102,15 @@ class Vbot extends Command
                          break;
                     }
                 }
+
+                $key_arr_editor = array("课程","写作","文案");
+                $status_key_for_editor = false;
+                foreach ($key_arr as $key => $value) {
+                    if(strpos($message['message'],$value) !== false){ 
+                         $status_key_for_editor = true;
+                         break;
+                    }
+                }
                 // $list = $this->model->where('key', $message['message'])->find();
                 // if(!$list){
                 //     return;
@@ -137,6 +146,11 @@ class Vbot extends Command
                 if($status_key){
                     $groupsList = $groups->getGroupsByNickname('运营指南通知群', $blur = false);
                     $Puppet->sendtext($groupsList['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
+                }
+
+                if($status_key_for_editor){
+                    $groupsList_editor = $groups->getGroupsByNickname('编辑器通知群', $blur = false);
+                    $Puppet->sendtext($groupsList_editor['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
                 }
             }
             
