@@ -95,7 +95,7 @@ class Vbot extends Command
             if($message['fromType'] == 'Group'){
                 // 查询单个数据
                 //运营指南
-                if($port == 1189){
+                if($port == 1131){
                     $key_arr = array("商城","涨粉","裂变","任务宝","迁移","媒想到","星耀","乙店","小裂变","分销","开通留言","邀请关注","拉人头","增粉","公众号留言");
                     $status_key = false;
                     foreach ($key_arr as $key => $value) {
@@ -108,7 +108,6 @@ class Vbot extends Command
                         $groupsList = $groups->getGroupsByNickname('运营指南通知群', $blur = false);
                         $Puppet->sendtext($groupsList['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
                     }
-                    echo "1111";
                 }elseif ($port == 1121) {
                     //编辑器
                     $key_arr_editor = array("秀米","编辑器","公众号排版","微信排版");
