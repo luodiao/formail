@@ -36,7 +36,7 @@ class Vbot extends Command
         $output->writeln('Date Crontab job start...');
         vendor('vbot.Puppet');
         $Puppet = new \Puppet($this->config);
-        $Puppet->messageHandler->setHandler(function ($message) use ($Puppet){
+        $Puppet->messageHandler->setHandler(function ($message) use ($Puppet,$port){
             //添加好友
             if ($message['type'] === 'request_friend') {
                 // 同意添加好友
@@ -94,23 +94,36 @@ class Vbot extends Command
             
             if($message['fromType'] == 'Group'){
                 // 查询单个数据
-                $key_arr = array("商城","涨粉","裂变","任务宝","迁移");
-                $status_key = false;
-                foreach ($key_arr as $key => $value) {
-                    if(strpos($message['message'],$value) !== false){ 
-                         $status_key = true;
-                         break;
+                //运营指南
+                if($port == 1189){
+                    $key_arr = array("商城","涨粉","裂变","任务宝","迁移","媒想到","星耀","乙店","小裂变","分销","开通留言","邀请关注","拉人头","增粉","公众号留言");
+                    $status_key = false;
+                    foreach ($key_arr as $key => $value) {
+                        if(strpos($message['message'],$value) !== false){ 
+                             $status_key = true;
+                             break;
+                        }
+                    }
+                    if($status_key){
+                        $groupsList = $groups->getGroupsByNickname('运营指南通知群', $blur = false);
+                        $Puppet->sendtext($groupsList['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
+                    }
+                }elseif ($port == 1121) {
+                    //编辑器
+                    $key_arr_editor = array("秀米","编辑器","公众号排版","微信排版");
+                    $status_key_for_editor = false;
+                    foreach ($key_arr_editor as $editorkey => $editorvalue) {
+                        if(strpos($message['message'],$editorvalue) !== false){ 
+                             $status_key_for_editor = true;
+                             break;
+                        }
+                    }
+                    if($status_key_for_editor){
+                        $groupsList_editor = $groups->getGroupsByNickname('编辑器通知群', $blur = false);
+                        $Puppet->sendtext($groupsList_editor['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
                     }
                 }
-
-                $key_arr_editor = array("课程","写作","文案");
-                $status_key_for_editor = false;
-                foreach ($key_arr_editor as $key => $value) {
-                    if(strpos($message['message'],$value) !== false){ 
-                         $status_key_for_editor = true;
-                         break;
-                    }
-                }
+                
                 // $list = $this->model->where('key', $message['message'])->find();
                 // if(!$list){
                 //     return;
@@ -143,15 +156,7 @@ class Vbot extends Command
                 //         # code...
                 //         break;
                 // }
-                if($status_key){
-                    $groupsList = $groups->getGroupsByNickname('运营指南通知群', $blur = false);
-                    $Puppet->sendtext($groupsList['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
-                }
-
-                if($status_key_for_editor){
-                    $groupsList_editor = $groups->getGroupsByNickname('编辑器通知群', $blur = false);
-                    $Puppet->sendtext($groupsList_editor['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
-                }
+               
             }
             
             // Hanson\Vbot\Message\Text::send($message['from']['UserName'], '你好啊，我在测试消息');
