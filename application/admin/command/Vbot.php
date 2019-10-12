@@ -108,6 +108,7 @@ class Vbot extends Command
                         $groupsList = $groups->getGroupsByNickname('运营指南通知群', $blur = false);
                         $Puppet->sendtext($groupsList['UserName'],"新消息提示！\n时间：".date('Y-m-d H:i:s',time())."\n用户所在微信群：【".$message['from']['NickName']."】\n用户名称：【".$message['sender']['NickName']."】\n用户说：【".$message['message']."】");
                     }
+                    echo "1111";
                 }elseif ($port == 1121) {
                     //编辑器
                     $key_arr_editor = array("秀米","编辑器","公众号排版","微信排版");
@@ -210,7 +211,7 @@ class Vbot extends Command
             }else{
                 echo "失败";
             }
-            echo "退出登录111\n";
+            echo "退出登录\n";
 
         });
         $Puppet->server->serve();
