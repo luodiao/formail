@@ -45,7 +45,7 @@ class Dashboard extends Backend
         $gq_time = time() - (30*86400);
         $gq_condition = array(
             'status' => 3,
-            'end_time' => array('egt',$gq_time)
+            'end_time' => array('elt',$gq_time)
             );
         //查询过期列表
         $list = $this->WorkOkMdel->where($gq_condition)->order('end_time asc')
