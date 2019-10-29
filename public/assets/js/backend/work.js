@@ -24,7 +24,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
+                        {field: 'id', title: __('Id'),operate:false},
                         {field: 'wechat_nickname', title: __('Wechat_nickname')},
                         {field: 'mobile', title: __('Mobile')},
                         {field: 'wechat_name', title: __('Wechat_name')},
@@ -32,7 +32,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'industry_type', title: __('Industry_type'), searchList: {"1":__('Industry_type 1'),"2":__('Industry_type 2')}, formatter: Table.api.formatter.normal},
                         {field: 'project', title: __('Project'), searchList: {"1":__('Project 1'),"2":__('Project 2'),"3":__('Project 3'),"98":__('Project 98'),"99":__('Project 99')}, formatter: Table.api.formatter.normal},
                         {field: 'admin_id', title: __('Admin_id')},
-                        {field: 'admin_text', title: __('Admin_text')},
+                        {field: 'admin_text', title: __('Admin_text'),operate:false},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'level', title: __('Level'), searchList: {"5":__('Level 5'),"4":__('Level 4'),"3":__('Level 3'),"2":__('Level 2'),"1":__('Level 1')}, formatter: Table.api.formatter.normal},

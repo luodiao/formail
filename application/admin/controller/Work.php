@@ -158,7 +158,10 @@ class Work extends Backend
                         Db::rollback();
 
                     if($okObj == false){
-                        $params['admin_id'] = $this->auth->id;
+                        if($row->admin_id != $this->auth->id){
+                            $this->error('你只能认定成功自己添加的记录');exit;
+                        }
+                        $params['admin_id'] = $row->admin_id;
                         $params['work_id'] = $row->id;
                         $result = $this->WordOkMdel->allowField(true)->save($params);
                     }else{
@@ -197,7 +200,6 @@ class Work extends Backend
     }
 
     public function yeji(){
-        echo 1111;exit;
         //设置过滤方法
         $this->request->filter(['strip_tags']);
         if ($this->request->isAjax()) {

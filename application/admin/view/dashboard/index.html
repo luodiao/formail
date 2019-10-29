@@ -88,7 +88,7 @@
     .st-green {
         background-color: #27C24C;
     }
-    
+
 
     .st-violet {
         background-color: #7266ba;
@@ -150,6 +150,7 @@
     .item {
         padding: 30px 0;
     }
+
 </style>
 <div class="panel panel-default panel-intro">
     <div class="panel-heading">
@@ -166,6 +167,7 @@
                 
 
 
+
                 <div class="row " style="margin-top:15px;">
 
                     <div class="col-lg-12">
@@ -178,8 +180,8 @@
                                     <h5>总客户人数</h5>
                                 </div>
                                 <div class="panel-content">
-                                    <h1 class="no-margins">1234</h1>
-                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-users"></i> 1234</div>
+                                    <h1 class="no-margins">{$count_cy}</h1>
+                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-users"></i> {$count_cy}</div>
                                     <small>平台总的客户人数</small>
                                 </div>
                             </div>
@@ -193,47 +195,65 @@
                                     <h5>总付费客户人数</h5>
                                 </div>
                                 <div class="ibox-content">
-                                    <h1 class="no-margins">1043</h1>
-                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-users"></i> 2592</div>
+                                    <h1 class="no-margins">{$count_ff}</h1>
+                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-users"></i> {$count_ff}</div>
                                     <small>平台总的付费客户人数</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6">
-                         <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
-                        <div class="col-xs-12 col-md-6">
-                           
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">开始时间:</label>
-                                    <div class="col-xs-5 col-md-12">
-                                         <input id="start_ed" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="start_ed" type="text" value="{:date('Y-m-d')}">
-                                    </div>
+                     <div class="col-xs-6 col-md-3">
+                        <div class="panel bg-purple-gradient">
+                            <div class="panel-body">
+                                <div class="ibox-title">
+                                    <span class="label label-info pull-right"></span>
+                                    <h5>总付费金额</h5>
                                 </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">结束时间:</label>
-                                    <div class="col-xs-5 col-md-12">
-                                         <input id="end_ed" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="start_ed" type="text" value="{:date('Y-m-d')}">
-                                    </div>
+                                <div class="ibox-content">
+                                    <h1 class="no-margins">￥{$count_je}</h1>
+                                    <div class="stat-percent font-bold text-gray"><i class="glyphicon glyphicon-yen"></i> {$count_je}</div>
+                                    <small>平台总的付费金额</small>
                                 </div>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-md-6" style="margin: 50px auto;">
-                            <a href="javascript:; " class="btn btn-info">
-                                <i class="glyphicon glyphicon-search"></i> 查询
-                            </a>
-                        </div>
-                            </form>
-
                     </div>
-
+                    <div class="col-xs-6 col-md-3">
+                        <div class="panel bg-green-gradient">
+                            <div class="panel-body">
+                                <div class="ibox-title">
+                                    <span class="label label-info pull-right"></span>
+                                    <h5>总未完成客户数</h5>
+                                </div>
+                                <div class="ibox-content">
+                                    <h1 class="no-margins">{$count_wwc}</h1>
+                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-users"></i> {$count_wwc}</div>
+                                    <small>平台总未完成客户数</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-12 box box-info"></div>
+                 <div class="col-xs-12 col-md-12 flex-column justify-content-center bg-light" style="padding-top:17px;margin-bottom:17px;border-top:1px solid #f4f4f4">
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <label for="exampleInputName2">开始时间</label>
+                        <input id="start_ed" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="start_ed" type="text" value="{$m}">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail2">结束时间</label>
+                        <input id="end_ed" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="start_ed" type="text" value="{:date('Y-m-d')}">
+                      </div>
+                      <a href="javascript:; " class="btn btn-info" id="sen_yj">
+                            <i class="glyphicon glyphicon-search"></i> 确认查询
+                        </a>
+                    </form>
+                </div>
                 <div class="row ">
                     <div class="col-sm-4 col-xs-12">
                         <div class="sm-st clearfix">
                             <span class="sm-st-icon st-red"><i class="fa fa-users"></i></span>
                             <div class="sm-st-info">
-                                <span>{$totaluser}</span>
+                                <span id="zq_count_cy">{$zq_count_cy}</span>
                                 新增客户数
                             </div>
                         </div>
@@ -242,7 +262,7 @@
                         <div class="sm-st clearfix">
                             <span class="sm-st-icon st-violet"><i class="fa fa-shopping-bag"></i></span>
                             <div class="sm-st-info">
-                                <span>{$totalviews}</span>
+                                <span id="zq_count_ff">{$zq_count_ff}</span>
                                 新增付费客户人数
                             </div>
                         </div>
@@ -251,87 +271,36 @@
                         <div class="sm-st clearfix">
                             <span class="sm-st-icon st-blue"><i class="glyphicon glyphicon-random "></i></span>
                             <div class="sm-st-info">
-                                <span>{$totalorder}</span>
+                                <span id="bfb">{$bfb}%</span>
                                 新增用户转化率
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="row">
                     
                     <div class="col-lg-12">
                         <div class="box box-success">
                             <div class="box-header with-border">
-                                <h3 class="box-title">最近过期客户 (13人)</h3>
+                                <h3 class="box-title">最近过期及有效时间不足30天客户 ({$gq}人)</h3>
 
                                 <div class="box-tools pull-right">
                                 </div>
                             </div>
                             <div class="box-body">
                                 <ul class="nav nav-pills nav-stacked">
-                                    <li>
-                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【裂变宝】到期时间 2019-11-10
-                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 15天</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">公众号：【程序员管家】 购买应用：【节日指数】到期时间 2019-11-11
-                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 16天</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">公众号：【小熊死的快快的】 购买应用：【裂变宝】到期时间 2019-11-18
-                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
-                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
-                                        </a>
-                                    </li>
-                                     <li>
-                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
-                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
-                                        </a>
-                                    </li>
-                                    
-                                     <li>
-                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
-                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
-                                        </a>
-                                    </li>
-                                     <li>
-                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
-                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
-                                        </a>
-                                    </li>
-                                     <li>
-                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
-                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
-                                        </a>
-                                    </li>
-                                     <li>
-                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
-                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
-                                        </a>
-                                    </li>
-                                     <li>
-                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
-                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
-                                        </a>
-                                    </li>
-                                     <li>
-                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
-                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
-                                        </a>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【裂变宝】到期时间 2019-12-10
-                                        <span class="pull-right text-green"><i class="fa fa-angle-down"></i> 43天</span>
-                                        </a>
-                                    </li>
-                                    
+                                    {volist name="list" id="vo" offset="0" length="3" mod="2" empty="这里没有数据" key ='s'}
+                                        <li>
+                                            <a href="javascript:;">公众号：【{$vo.wechat_name}】 购买应用：【{$vo.project_text}】到期时间 {$vo.end_time_text}
+                                                {if condition="$vo['gq_len'] egt 10"}
+                                                    <span class="pull-right text-green"><i class="fa fa-angle-down"></i> {$vo.gq_len}天</span>
+                                                {else /}
+                                                    <span class="pull-right text-red"><i class="fa fa-angle-down"></i> {$vo.gq_len}天</span>
+                                                {/if}
+                                            </a>
+                                        </li>
+                                　　{/volist}
                                 </ul>
                             </div>
                         </div>

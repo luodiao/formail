@@ -22,6 +22,29 @@ define(['jquery', 'bootstrap', 'backend', 'addtabs', 'table', 'echarts', 'echart
                 $('.datetimepicker').parent().css('position', 'relative');
                 $('.datetimepicker').datetimepicker(options);
             });
+            $('#sen_yj').click(function(){
+                var s = $("#start_ed").val();
+                var e = $("#end_ed").val();
+                var data = {
+                    s:s,
+                    e:e
+                }
+                var url = '/admin/Dashboard/getgd'
+                $.ajax({
+                      type: 'POST',
+                      url: url,
+                      data: data,
+                      success: function(res){
+                        if(res.code === 1){
+                            $("#zq_count_cy").html(res.msg.zq_count_cy);
+                            $("#zq_count_ff").html(res.msg.zq_count_ff);
+                            $("#bfb").html(res.msg.bfb + "%");
+                        }else{
+                            Toastr.error(res.msg)
+                        }
+                      },
+                });
+            });
         },
          api: {
             bindevent: function () {
