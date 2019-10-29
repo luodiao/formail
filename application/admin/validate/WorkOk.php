@@ -4,7 +4,7 @@ namespace app\admin\validate;
 
 use think\Validate;
 
-class Test extends Validate
+class WorkOk extends Validate
 {
     /**
      * 验证规则

@@ -1,53 +1,62 @@
 <style type="text/css">
     .sm-st {
-        background:#fff;
-        padding:20px;
-        -webkit-border-radius:3px;
-        -moz-border-radius:3px;
-        border-radius:3px;
-        margin-bottom:20px;
-        -webkit-box-shadow: 0 1px 0px rgba(0,0,0,0.05);
-        box-shadow: 0 1px 0px rgba(0,0,0,0.05);
+        background: #fff;
+        padding: 20px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05);
     }
+
     .sm-st-icon {
-        width:60px;
-        height:60px;
-        display:inline-block;
-        line-height:60px;
-        text-align:center;
-        font-size:30px;
-        background:#eee;
-        -webkit-border-radius:5px;
-        -moz-border-radius:5px;
-        border-radius:5px;
-        float:left;
-        margin-right:10px;
-        color:#fff;
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        line-height: 60px;
+        text-align: center;
+        font-size: 30px;
+        background: #eee;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        float: left;
+        margin-right: 10px;
+        color: #fff;
     }
+
     .sm-st-info {
-        font-size:12px;
-        padding-top:2px;
+        font-size: 12px;
+        padding-top: 2px;
     }
+
     .sm-st-info span {
-        display:block;
-        font-size:24px;
-        font-weight:600;
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
     }
+
     .orange {
-        background:#fa8564 !important;
+        background: #fa8564 !important;
     }
+
     .tar {
-        background:#45cf95 !important;
+        background: #45cf95 !important;
     }
+
     .sm-st .green {
-        background:#86ba41 !important;
+        background: #86ba41 !important;
     }
+
     .pink {
-        background:#AC75F0 !important;
+        background: #AC75F0 !important;
     }
+
     .yellow-b {
         background: #fdd752 !important;
     }
+
     .stat-elem {
 
         background-color: #fff;
@@ -58,12 +67,12 @@
 
     .stat-info {
         text-align: center;
-        background-color:#fff;
+        background-color: #fff;
         border-radius: 5px;
         margin-top: -5px;
         padding: 8px;
-        -webkit-box-shadow: 0 1px 0px rgba(0,0,0,0.05);
-        box-shadow: 0 1px 0px rgba(0,0,0,0.05);
+        -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05);
         font-style: italic;
     }
 
@@ -75,12 +84,16 @@
     .st-red {
         background-color: #F05050;
     }
+
     .st-green {
         background-color: #27C24C;
     }
+    
+
     .st-violet {
         background-color: #7266ba;
     }
+
     .st-blue {
         background-color: #23b7e5;
     }
@@ -92,7 +105,7 @@
         text-align: center;
         vertical-align: middle;
         width: 50px;
-        float:left;
+        float: left;
     }
 
     .stat {
@@ -100,29 +113,44 @@
         overflow: hidden;
         text-overflow: ellipsis;
         display: inline-block;
-        margin-right: 10px; }
+        margin-right: 10px;
+    }
+
     .stat .value {
         font-size: 20px;
         line-height: 24px;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-weight: 500; }
+        font-weight: 500;
+    }
+
     .stat .name {
         overflow: hidden;
-        text-overflow: ellipsis; }
+        text-overflow: ellipsis;
+    }
+
     .stat.lg .value {
         font-size: 26px;
-        line-height: 28px; }
+        line-height: 28px;
+    }
+
     .stat.lg .name {
-        font-size: 16px; }
-    .stat-col .progress {height:2px;}
-    .stat-col .progress-bar {line-height:2px;height:2px;}
+        font-size: 16px;
+    }
+
+    .stat-col .progress {
+        height: 2px;
+    }
+
+    .stat-col .progress-bar {
+        line-height: 2px;
+        height: 2px;
+    }
 
     .item {
-        padding:30px 0;
+        padding: 30px 0;
     }
 </style>
-
 <div class="panel panel-default panel-intro">
     <div class="panel-heading">
         {:build_heading(null, false)}
@@ -137,63 +165,174 @@
 
                 
 
-                
 
-                
+                <div class="row " style="margin-top:15px;">
 
-                <!--如果需要删除最新新闻和最新发贴，删除HTML后还需要删除dashboard.js中的代码-->
-                <div class="row">
                     <div class="col-lg-12">
-                        <div class="box box-info">
-                            <div class="box-header"><h3 class="box-title">{:__('Server info')}</h3></div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="panel bg-blue">
+                            <div class="panel-body">
+                                <div class="panel-title">
+                                    <span class="label label-success pull-right"></span>
+                                    <h5>总客户人数</h5>
+                                </div>
+                                <div class="panel-content">
+                                    <h1 class="no-margins">1234</h1>
+                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-users"></i> 1234</div>
+                                    <small>平台总的客户人数</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="panel bg-aqua-gradient">
+                            <div class="panel-body">
+                                <div class="ibox-title">
+                                    <span class="label label-info pull-right"></span>
+                                    <h5>总付费客户人数</h5>
+                                </div>
+                                <div class="ibox-content">
+                                    <h1 class="no-margins">1043</h1>
+                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-users"></i> 2592</div>
+                                    <small>平台总的付费客户人数</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                         <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+                        <div class="col-xs-12 col-md-6">
+                           
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">开始时间:</label>
+                                    <div class="col-xs-5 col-md-12">
+                                         <input id="start_ed" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="start_ed" type="text" value="{:date('Y-m-d')}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">结束时间:</label>
+                                    <div class="col-xs-5 col-md-12">
+                                         <input id="end_ed" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="start_ed" type="text" value="{:date('Y-m-d')}">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6" style="margin: 50px auto;">
+                            <a href="javascript:; " class="btn btn-info">
+                                <i class="glyphicon glyphicon-search"></i> 查询
+                            </a>
+                        </div>
+                            </form>
+
+                    </div>
+
+                </div>
+                <div class="col-xs-12 box box-info"></div>
+                <div class="row ">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="sm-st clearfix">
+                            <span class="sm-st-icon st-red"><i class="fa fa-users"></i></span>
+                            <div class="sm-st-info">
+                                <span>{$totaluser}</span>
+                                新增客户数
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="sm-st clearfix">
+                            <span class="sm-st-icon st-violet"><i class="fa fa-shopping-bag"></i></span>
+                            <div class="sm-st-info">
+                                <span>{$totalviews}</span>
+                                新增付费客户人数
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="sm-st clearfix">
+                            <span class="sm-st-icon st-blue"><i class="glyphicon glyphicon-random "></i></span>
+                            <div class="sm-st-info">
+                                <span>{$totalorder}</span>
+                                新增用户转化率
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-lg-12">
+                        <div class="box box-success">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">最近过期客户 (13人)</h3>
+
+                                <div class="box-tools pull-right">
+                                </div>
+                            </div>
                             <div class="box-body">
-                                <table class="table table-striped">
-                                    <tbody>
-                                        <tr>
-                                            <td width="140">mis 版本</td>
-                                            <td>{$Think.config.fastadmin.version} <a href="javascript:;" class="btn btn-xs btn-checkversion">检查最新版</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>插件版本</td>
-                                            <td>{$addonversion}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{:__('Sapi name')}</td>
-                                            <td>{:php_sapi_name()}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{:__('Debug mode')}</td>
-                                            <td>{$Think.config.app_debug?__('Yes'):__('No')}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{:__('Software')}</td>
-                                            <td>{$Think.server.SERVER_SOFTWARE}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{:__('Upload mode')}</td>
-                                            <td>{$uploadmode}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{:__('Upload url')}</td>
-                                            <td>{$config.upload.uploadurl}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{:__('Upload Cdn url')}</td>
-                                            <td>{$config.upload.cdnurl}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{:__('Timezone')}</td>
-                                            <td>{:date_default_timezone_get()}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{:__('Cdn url')}</td>
-                                            <td>__CDN__</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{:__('Language')}</td>
-                                            <td>{$config.language}</td>
-                                        </tr>
-                                    </tbody></table>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li>
+                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【裂变宝】到期时间 2019-11-10
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 15天</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">公众号：【程序员管家】 购买应用：【节日指数】到期时间 2019-11-11
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 16天</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">公众号：【小熊死的快快的】 购买应用：【裂变宝】到期时间 2019-11-18
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
+                                        </a>
+                                    </li>
+                                    
+                                     <li>
+                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【群发宝】到期时间 2019-11-18
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 23天</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="javascript:;">公众号：【裂变互动】 购买应用：【裂变宝】到期时间 2019-12-10
+                                        <span class="pull-right text-green"><i class="fa fa-angle-down"></i> 43天</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -209,38 +348,8 @@
         </div>
     </div>
 </div>
-<script id="newstpl" type="text/html">
-    <ul class="nav nav-stacked">
-        <%for(var i=0;i < news.length;i++){%>
-        <%var item=news[i];%>
-        <li>
-            <a href="<%=item.url%>" target="_blank">
-                <span class="text"><%=item.title%></span>
-            </a>
-        </li>
-        <%}%>
-    </ul>
-</script>
-<script id="discussiontpl" type="text/html">
-    <ul class="products-list product-list-in-box">
-        <%for(var i=0;i < news.length;i++){%>
-        <%var item=news[i];%>
-        <li class="item">
-            <div class="">
-                <a href="<%=item.url%>" target="_blank" class="product-title"><%=item.title%>
-                    <span class="label label-warning pull-right"><%=item.comments_count%></span></a>
-                <span class="product-description">
-                    <%=item.last_time%>
-                </span>
-            </div>
-        </li>
-        <%}%>
-    </ul>
-</script>
+
 <script>
-    var Orderdata = {
-    column: {:json_encode(array_keys($paylist))},
-            paydata: {:json_encode(array_values($paylist))},
-            createdata: {:json_encode(array_values($createlist))},
-    };
+
+
 </script>
