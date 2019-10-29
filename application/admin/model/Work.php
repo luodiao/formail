@@ -43,7 +43,7 @@ class Work extends Model
 
     public function getIndustryTypeList()
     {
-        return ['1' => __('Industry_type 1'), '2' => __('Industry_type 2')];
+        return ['1' => __('Industry_type 1'), '2' => __('Industry_type 2'), '3' => __('Industry_type 3'), '4' => __('Industry_type 4'), '5' => __('Industry_type 5'), '6' => __('Industry_type 6'), '7' => __('Industry_type 7'), '8' => __('Industry_type 8'), '9' => __('Industry_type 9'), '10' => __('Industry_type 10'), '11' => __('Industry_type 11'), '12' => __('Industry_type 12')];
     }
 
     public function getProjectList()

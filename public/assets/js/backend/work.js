@@ -29,7 +29,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'mobile', title: __('Mobile')},
                         {field: 'wechat_name', title: __('Wechat_name')},
                         {field: 'wechat_type', title: __('Wechat_type'), searchList: {"1":__('Wechat_type 1'),"2":__('Wechat_type 2'),"3":__('Wechat_type 3')}, formatter: Table.api.formatter.normal},
-                        {field: 'industry_type', title: __('Industry_type'), searchList: {"1":__('Industry_type 1'),"2":__('Industry_type 2')}, formatter: Table.api.formatter.normal},
+                        {field: 'industry_type', title: __('Industry_type'), searchList: {"1":__('Industry_type 1'),"2":__('Industry_type 2'),"3":__('Industry_type 3'),"4":__('Industry_type 4'),"5":__('Industry_type 5'),"6":__('Industry_type 6'),"7":__('Industry_type 7'),"8":__('Industry_type 8'),"9":__('Industry_type 9'),"10":__('Industry_type 10'),"11":__('Industry_type 11'),"12":__('Industry_type 12')}, formatter: Table.api.formatter.normal},
                         {field: 'project', title: __('Project'), searchList: {"1":__('Project 1'),"2":__('Project 2'),"3":__('Project 3'),"98":__('Project 98'),"99":__('Project 99')}, formatter: Table.api.formatter.normal},
                         {field: 'admin_id', title: __('Admin_id')},
                         {field: 'admin_text', title: __('Admin_text'),operate:false},
