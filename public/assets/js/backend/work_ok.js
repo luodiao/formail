@@ -134,8 +134,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'price', title: __('Price'), operate:'BETWEEN',operate:false},
                         {field: 'length', title: __('Length'),operate:false},
                         {field: 'admin_text', title: __('Admin_text'),operate:false},
-                        {field: 'admin_text', title: __('Admin_text'),operate:false},
-                        {field: 'admin_text', title: __('Admin_text'),operate:false},
                         {field: 'open_time', title: __('Open_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'end_time', title: __('End_time'),operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                     ]
