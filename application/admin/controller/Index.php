@@ -82,7 +82,7 @@ class Index extends Backend
             $validate = new Validate($rule, [], ['username' => __('Username'), 'password' => __('Password'), 'captcha' => __('Captcha')]);
             $result = $validate->check($data);
             if (!$result) {
-                // $this->error($validate->getError(), $url, ['token' => $this->request->token()]);
+                $this->error($validate->getError(), $url, ['token' => $this->request->token()]);
             }
 
             AdminLog::setTitle(__('Login'));
