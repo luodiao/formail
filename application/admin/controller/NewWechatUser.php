@@ -49,7 +49,7 @@ class NewWechatUser extends Backend
                 if(!isset($params['token']) || $params['token'] == ''){
                     $this->error("token不能为空,请仔细填写token");
                 }else{
-                    $portObj = $this->portmodel->where('token', $params['token'])->where('status',0)->where('user_id',$this->auth->id)->find();
+                    $portObj = $this->portmodel->where('token', $params['token'])->where('status',0)->find();
                     if(!$portObj){
                         $this->error("token有误，或者已经被使用");
                     }
