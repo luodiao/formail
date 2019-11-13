@@ -2,3 +2,5 @@
 /runtime/*
 /public
 /public/*
+/vendor
+/vendor/*
