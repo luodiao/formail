@@ -4,3 +4,7 @@
 /public/*
 /vendor
 /vendor/*
+vbot_error.log
+vbot.sh
+vbot.log
+.env
