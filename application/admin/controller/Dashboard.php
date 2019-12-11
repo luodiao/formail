@@ -42,7 +42,7 @@ class Dashboard extends Backend
         $config = Config::get("composer");
         $addonVersion = isset($config['version']) ? $config['version'] : __('Unknown');
 
-        $gq_time = time() - (30*86400);
+        $gq_time = time() + (30*86400);
         $gq_condition = array(
             'status' => 3,
             'end_time' => array('elt',$gq_time)
