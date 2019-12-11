@@ -290,7 +290,7 @@
                             </div>
                             <div class="box-body">
                                 <ul class="nav nav-pills nav-stacked">
-                                    {volist name="list" id="vo" offset="0" length="3" mod="2" empty="这里没有数据" key ='s'}
+                                    {volist name="list" id="vo" empty="这里没有数据" key ='s'}
                                         <li>
                                             <a href="javascript:;">公众号：【{$vo.wechat_name}】 购买应用：【{$vo.project_text}】到期时间 {$vo.end_time_text}
                                                 {if condition="$vo['gq_len'] egt 10"}
