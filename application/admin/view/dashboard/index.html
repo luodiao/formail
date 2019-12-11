@@ -293,7 +293,7 @@
                                     {volist name="list" id="vo" empty="这里没有数据" key ='s'}
                                         <li>
                                             <a href="javascript:;">公众号：【{$vo.wechat_name}】 购买应用：【{$vo.project_text}】到期时间 {$vo.end_time_text}
-                                                {if condition="$vo['gq_len'] elt 10"}
+                                                {if condition="$vo['gq_len'] egt 0"}
                                                     <span class="pull-right text-green"><i class="fa fa-angle-down"></i> {$vo.gq_len}天</span>
                                                 {else /}
                                                     <span class="pull-right text-red"><i class="fa fa-angle-down"></i> {$vo.gq_len}天</span>
