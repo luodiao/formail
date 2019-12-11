@@ -54,7 +54,7 @@ class Dashboard extends Backend
         $today = strtotime(date("Y-m-d"));
         $gq = $this->WorkOkMdel->where($gq_condition)->count();
         foreach ($list as $key => &$value) {
-            $value->gq_len = ceil(($today - $value->end_time)/86400);
+            $value->gq_len = ceil(($value->end_time-$today)/86400);
         }
 
         //获取总付费人数
