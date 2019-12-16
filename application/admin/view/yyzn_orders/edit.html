@@ -1,0 +1,101 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">创建时间:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-key" class="form-control" name="row[pay_type]" type="text" value="{$row.createtime|date="Y-m-d H:i:s",###}" disabled>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">应用名称:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-key" class="form-control" name="row[aid]" type="text" value="{$row.aid_text}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">有效时间:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-key" class="form-control" name="row[num]" type="text" value="{$row.num_text}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">支付类型:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-key" class="form-control" name="row[pay_type]" type="text" value="{$row.pay_type_text}" disabled>
+        </div>
+    </div>
+    {gt name="row['pay_type']" value="2"}
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">收益金额:</label>
+            <div class="col-xs-12 col-sm-8">
+                <input id="c-key" class="form-control" name="row[total_price]" type="text" value="{$row.total_price}" >
+            </div>
+        </div>
+        {eq name="row['pay_type']" value="3"}
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">兑换码备注:</label>
+                <div class="col-xs-12 col-sm-8">
+                    <input id="c-key" class="form-control" name="row[coderemark]" type="text" value="{$row.coderemark}" disabled>
+                </div>
+            </div>
+        {/eq}
+    {else /}
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">收益金额:</label>
+            <div class="col-xs-12 col-sm-8">
+                <input id="c-key" class="form-control" name="row[total_price]" type="text" value="{$row.total_price}" disabled> 
+            </div>
+        </div>
+        <div class="form-group">
+
+        {gt name="row['pay_type']" value="1"}
+            <label class="control-label col-xs-12 col-sm-2">微信订单号:</label>
+        {else /}
+            <label class="control-label col-xs-12 col-sm-2">支付宝订单号:</label>
+        {/gt}
+            <div class="col-xs-12 col-sm-8">
+                <input id="c-key" class="form-control" name="row[order_num]" type="text" value="{$row.order_num}" disabled>
+            </div>
+        </div>
+        
+    {/gt}
+   
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">优惠金额:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-key" class="form-control" name="row[code_price]" type="text" value="{$row.code_price}" disabled>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">公众号名称:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-key" class="form-control" name="row[wechat_name]" type="text" value="{$row.wechat_name}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">用户名称:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-key" class="form-control" name="row[user_name]" type="text" value="{$row.user_name}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">管理员名称:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-key" class="form-control" name="row[admin_text]" type="text" value="{$row.admin_text}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">备注:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-remark" class="form-control " rows="5" name="row[remark]" cols="50">{$row.remark}</textarea>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
