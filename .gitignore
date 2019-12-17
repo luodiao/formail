@@ -1,7 +1,5 @@
 /runtime
 /runtime/*
-/public
-/public/*
 vbot_error.log
 vbot.sh
 vbot.log
