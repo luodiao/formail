@@ -27,7 +27,7 @@ class WxActivitiesAuthsLog extends Model
     protected $YyznUsers = false;
     protected $WxEs = false;
     protected $yyznCarts = false;
-    
+
     // 追加属性
     protected $append = [
         'pay_type_text',
@@ -38,7 +38,7 @@ class WxActivitiesAuthsLog extends Model
         'user_name',
         'code_text',
     ];
-    protected static function init()
+    protected function init()
     {
         $this->YyznUsers = new YyznUsers();
         $this->WxEs = new WxEs();
