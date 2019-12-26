@@ -38,8 +38,9 @@ class WxActivitiesAuthsLog extends Model
         'user_name',
         'code_text',
     ];
-    protected function init()
+    public function __construct($data)
     {
+        parent::__construct($data);
         $this->YyznUsers = new YyznUsers();
         $this->WxEs = new WxEs();
         $this->yyznCarts = new yyznCarts();
