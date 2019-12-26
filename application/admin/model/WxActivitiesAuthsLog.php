@@ -5,7 +5,7 @@ namespace app\admin\model;
 use think\Model;
 use \app\admin\model\WxEs;
 use \app\admin\model\YyznUsers;
-use \app\admin\model\yyznCarts;
+use \app\admin\model\YyznCarts;
 
 class WxActivitiesAuthsLog extends Model
 {
@@ -43,7 +43,7 @@ class WxActivitiesAuthsLog extends Model
         parent::__construct($data);
         $this->YyznUsers = new YyznUsers();
         $this->WxEs = new WxEs();
-        $this->yyznCarts = new yyznCarts();
+        $this->yyznCarts = new YyznCarts();
     }
 
     public function getUserName($user_id){
