@@ -59,7 +59,14 @@
             </div>
         {/gt}
     {/gt}
-   
+    {gt name="row['is_code']" value="0"}
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">优惠码备注:</label>
+            <div class="col-xs-12 col-sm-8">
+                <textarea id="c-remark" class="form-control " rows="5" name="row[remark]" cols="50">{$row.code_text}</textarea>
+            </div>
+        </div>
+    {/gt}
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">优惠金额:</label>
         <div class="col-xs-12 col-sm-8">

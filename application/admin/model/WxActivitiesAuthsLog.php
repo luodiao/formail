@@ -5,6 +5,7 @@ namespace app\admin\model;
 use think\Model;
 use \app\admin\model\WxEs;
 use \app\admin\model\YyznUsers;
+use \app\admin\model\yyznCarts;
 
 class WxActivitiesAuthsLog extends Model
 {
@@ -23,7 +24,10 @@ class WxActivitiesAuthsLog extends Model
     protected $createTime = 'createtime';
     protected $updateTime = false;
     protected $deleteTime = false;
-
+    protected $YyznUsers = false;
+    protected $WxEs = false;
+    protected $yyznCarts = false;
+    
     // 追加属性
     protected $append = [
         'pay_type_text',
@@ -32,19 +36,35 @@ class WxActivitiesAuthsLog extends Model
         'wechat_name',
         'admin_text',
         'user_name',
+        'code_text',
     ];
+    protected static function init()
+    {
+        $this->YyznUsers = new YyznUsers();
+        $this->WxEs = new WxEs();
+        $this->yyznCarts = new yyznCarts();
+    }
+
     public function getUserName($user_id){
-        $model = new YyznUsers();
-        return $model->where('id',$user_id)->value('username');
+        return $this->YyznUsers->where('id',$user_id)->value('username');
     }
     public function getWxName($wx_id){
-        $model = new WxEs();
-        $name = $model->where('id',$wx_id)->value('name');
+        $name = $this->WxEs->where('id',$wx_id)->value('name');
         if($name){
             return $name;
         }
         return '';
     }
+    //获取公众号名称
+    public function getCodeTextAttr($value,$data){
+        $order_id = isset($data['fk_id']) ? $data['fk_id'] : '';
+        $is_code = isset($data['is_code']) ? $data['is_code'] : '';
+        if($is_code > 0){
+            return $this->yyznCarts->where('product_model','WxActivitiesAuth_Dis')->where('order_id',$order_id)->value('remarks');
+        }
+        return null;
+    }
+
     //获取公众号名称
     public function getAdminTextAttr($value,$data){
         $value = $value ? $value : (isset($data['admin_id']) ? $data['admin_id'] : '');
