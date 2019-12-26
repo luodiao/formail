@@ -5,7 +5,7 @@ namespace app\admin\model;
 use think\Model;
 use \app\admin\model\WxEs;
 use \app\admin\model\YyznUsers;
-use \app\admin\model\YyznCarts;
+use \app\admin\model\OrderDiscount;
 
 class WxActivitiesAuthsLog extends Model
 {
@@ -26,7 +26,7 @@ class WxActivitiesAuthsLog extends Model
     protected $deleteTime = false;
     protected $YyznUsers = false;
     protected $WxEs = false;
-    protected $yyznCarts = false;
+    protected $OrderDiscount = false;
 
     // 追加属性
     protected $append = [
@@ -43,7 +43,7 @@ class WxActivitiesAuthsLog extends Model
         parent::__construct($data);
         $this->YyznUsers = new YyznUsers();
         $this->WxEs = new WxEs();
-        $this->yyznCarts = new YyznCarts();
+        $this->OrderDiscount = new OrderDiscount();
     }
 
     public function getUserName($user_id){
@@ -61,7 +61,7 @@ class WxActivitiesAuthsLog extends Model
         $order_id = isset($data['fk_id']) ? $data['fk_id'] : '';
         $is_code = isset($data['is_code']) ? $data['is_code'] : '';
         if($is_code > 0){
-            return $this->yyznCarts->where('product_model','WxActivitiesAuth_Dis')->where('order_id',$order_id)->value('remarks');
+            return $this->OrderDiscount->where('fk_order_id',$order_id)->value('remark');
         }
         return null;
     }
