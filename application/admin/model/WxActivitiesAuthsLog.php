@@ -32,11 +32,11 @@ class WxActivitiesAuthsLog extends Model
     protected $append = [
         'pay_type_text',
         'aid_text',
-        'num_text',
         'wechat_name',
         'admin_text',
         'user_name',
         'code_text',
+        'num_type_text',
     ];
     public function __construct($data = [])
     {
@@ -90,6 +90,18 @@ class WxActivitiesAuthsLog extends Model
         return '';
     }
 
+    public function getNumTypeList()
+    {
+        return ['0' => __('Num_type 0'),'1' => __('Num_type 1'), '2' => __('Num_type 2')];
+    }
+
+
+    public function getNumTypeTextAttr($value, $data)
+    {
+        $value = $value ? $value : (isset($data['num_type']) ? $data['num_type'] : '');
+        $list = $this->getNumTypeList();
+        return isset($list[$value]) ? $list[$value] : '';
+    }
     public function getPayTypeList()
     {
         return ['0' => __('Pay_type 0'),'1' => __('Pay_type 1'), '2' => __('Pay_type 2'), '3' => __('Pay_type 3'), '4' => __('Pay_type 4')];
@@ -106,7 +118,7 @@ class WxActivitiesAuthsLog extends Model
     //获取应用名称
     public function getAidList()
     {
-        return ['1' => __('A_tite 1'), '2' => __('A_tite 2'), '3' => __('A_tite 3')];
+        return ['1' => __('A_tite 1'), '2' => __('A_tite 2'), '3' => __('A_tite 3'),'4' => __('A_tite 4'),'5' => __('A_tite 5'),'6' => __('A_tite 6')];
     }
 
     public function getAidTextAttr($value,$data){
@@ -114,14 +126,4 @@ class WxActivitiesAuthsLog extends Model
         $list = $this->getAidList();
         return isset($list[$value]) ? $list[$value] : '';
     }
-
-    public function getNumTextAttr($value,$data){
-        $value = $value ? $value : (isset($data['num']) ? $data['num'] : '0');
-        if($data['pay_type'] == 3){
-            return $value.'天';
-        }
-        return $value.'月';
-    }
-
-
 }
