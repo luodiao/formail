@@ -69,8 +69,24 @@ class WxActivitiesAuthsLog extends Model
     //获取公众号名称
     public function getAdminTextAttr($value,$data){
         $value = $value ? $value : (isset($data['admin_id']) ? $data['admin_id'] : '');
+        $array = array(
+            '1' => 'admin',
+            '10' => '邹齐龙',
+            '13' => '张强',
+            '24' => '罗雕',
+            '41' => '赵通川',
+            '325' => '吕宗彦',
+            '655' => '唐林柳',
+            '3760' => '魏堂俊',
+            '3609' => '唐娟',
+            '3611' => '李昕',
+            '4664' => '李伟',
+        );
         if($value > 0){
-            return $this->getUserName($value);
+            if(isset($array[$value])){
+                return $array[$value];
+            }
+            return "未定义管理员名称";
         }
         return null;
     }
