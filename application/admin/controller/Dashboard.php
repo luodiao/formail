@@ -60,7 +60,7 @@ class Dashboard extends Backend
         //获取总付费人数
         unset($gq_condition['end_time']);
         $count_ff = $this->WorkOkMdel->where($gq_condition)->count();
-        $count_je = $this->WorkOkMdel->where($gq_condition)->sum('price');
+        $count_je = $this->WorkOkMdel->where($gq_condition)->sum('income_price');
         $count_wwc = $this->WorkMdel->count();
 
         $m = strtotime(date('Y-m-01', strtotime(date("Y-m-d"))));
