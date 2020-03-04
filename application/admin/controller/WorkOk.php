@@ -236,12 +236,12 @@ class WorkOk extends Backend
             $condition['open_time'] = array('egt',$w);
             $count['w'] = $this->model
                 ->where($condition)
-                ->sum('price');
+                ->sum('income_price');
 
             $condition['open_time'] = array('egt',$m);
             $count['m'] = $this->model
                 ->where($condition)
-                ->sum('price');
+                ->sum('income_price');
             $count['ok_cj'] = $this->model
                 ->where($condition)
                 ->count();
@@ -249,7 +249,7 @@ class WorkOk extends Backend
             $condition['open_time'] = array('egt',$j);
             $count['j'] = $this->model
                 ->where($condition)
-                ->sum('price');
+                ->sum('income_price');
             $no_condition = array();
             if(isset($filter['admin_id'])){
                 $no_condition['admin_id'] = $filter['admin_id'];
@@ -325,12 +325,12 @@ class WorkOk extends Backend
         $condition['open_time'] = array('egt',$w);
         $count['w'] = $this->model
             ->where($condition)
-            ->sum('price');
+            ->sum('income_price');
 
         $condition['open_time'] = array('egt',$m);
         $count['m'] = $this->model
             ->where($condition)
-            ->sum('price');
+            ->sum('income_price');
         $count['ok_cj'] = $this->model
             ->where($condition)
             ->count();
@@ -338,7 +338,7 @@ class WorkOk extends Backend
         $condition['open_time'] = array('egt',$j);
         $count['j'] = $this->model
             ->where($condition)
-            ->sum('price');
+            ->sum('income_price');
         $no_condition['admin_id'] = $this->auth->id;
 
         $count['no_cj'] = $this->WorkMdel->where($no_condition)->count();
