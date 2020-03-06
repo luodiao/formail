@@ -20,6 +20,7 @@ return [
     'Pay_type 2'   => '微信支付',
     'Pay_type 3'   => '兑换码',
     'Pay_type 4'   => '直接增加时间',
+    'Pay_type 5'   => '百度支付',
     'Pay_type 0'   => '其他',
     'Num_type' => '日期类型',
     'Num_type 0' => '天',
