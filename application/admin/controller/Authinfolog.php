@@ -50,30 +50,33 @@ class Authinfolog extends Backend
     public function index()
     {
         //设置过滤方法
+        $time = 86400 *30;
+        $start_ed = time() -$time;
+        $end_ed = time() + $time;
+        $filter = json_decode($_REQUEST['filter'],true);
+        $start_ed = strtotime(date("Y-m-d 00:00:00",$start_ed));
+        $end_ed = strtotime(date("Y-m-d 23:59:59",$end_ed));
+
         $this->request->filter(['strip_tags']);
         if ($this->request->isAjax()) {
             //如果发送的来源是Selectpage，则转发到Selectpage
             if ($this->request->request('keyField')) {
                 return $this->selectpage();
             }
-            $time = 86400 *30;
-            $start_ed = time() -$time;
-            $end_ed = time() + $time;
-            $filter = json_decode($_REQUEST['filter'],true);
-            $filter['validity_dt'] = date("Y-m-d 00:00:00",$start_ed) .' - '.date("Y-m-d 23:59:59",$end_ed);
-            $_REQUEST['filter'] = json_encode($filter);
-            $op = json_decode($_REQUEST['op'],true);
-            $op['validity_dt'] = 'RANGE';
-            $_REQUEST['op'] = json_encode($op);
+            
 
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->authinfomodel
                 ->where($where)
+                ->where('validity_dt','>',$start_ed)
+                ->where('validity_dt','<=',$end_ed)
                 ->order($sort, $order)
                 ->count();
 
             $list = $this->authinfomodel
                 ->where($where)
+                ->where('validity_dt','>',$start_ed)
+                ->where('validity_dt','<=',$end_ed)
                 ->order($sort, $order)
                 ->limit($offset, $limit)
                 ->select();
