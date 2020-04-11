@@ -53,7 +53,6 @@ class Authinfolog extends Backend
         $time = 86400 *30;
         $start_ed = time() -$time;
         $end_ed = time() + $time;
-        $filter = json_decode($_REQUEST['filter'],true);
         $start_ed = strtotime(date("Y-m-d 00:00:00",$start_ed));
         $end_ed = strtotime(date("Y-m-d 23:59:59",$end_ed));
 
