@@ -28,7 +28,15 @@
            <b>回访人员：{$vo.adminname}</b> 
         </div>
         <div class="col-xs-12 col-sm-6 logslevel">
-            <span> <i class="fa fa-tag"></i> 马上购买</span>
+            <span> <i class="fa fa-tag"></i> 
+            {switch name="vo.level"}
+                {case value="3" break="0"}马上续费{/case}
+                {case value="2"}优惠时续费{/case}
+                {case value="1"}考虑续费{/case}
+                {case value="0"}不续费{/case}
+                {default /}马上续费
+            {/switch}
+            </span>
         </div>
         <div class="col-xs-12 col-sm-12 logsdesc">
                 {$vo.desc}
