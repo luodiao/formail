@@ -56,6 +56,17 @@ class Authinfolog extends Backend
             if ($this->request->request('keyField')) {
                 return $this->selectpage();
             }
+            {"validity_dt":"2020-04-05 00:00:00 - 2020-04-11 23:59:59"}
+            $time = 86400 *30;
+            $start_ed = time() -$time;
+            $end_ed = time() + $time;
+            $filter = json_decode($_REQUEST['filter'],true);
+            $filter['validity_dt'] = date("Y-m-d 00:00:00",$start_ed) .' - '.date("Y-m-d 23:59:59",$end_ed);
+            $_REQUEST['filter'] = json_encode($filter);
+            $op = json_decode($_REQUEST['op'],true);
+            $op['validity_dt'] = 'RANGE';
+            $_REQUEST['op'] = json_encode($op);
+
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->authinfomodel
                 ->where($where)
