@@ -20,13 +20,13 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
+                        {field: 'id', title: __('Id'),operate:false},
                         {field: 'fk_id', title: __('A_tite'),searchList: {"1":__('A_tite 1'),"2":__('A_tite 2'),"3":__('A_tite 3'),"4":__('A_tite 4'),"5":__('A_tite 5'),"6":__('A_tite 6')}, formatter: Table.api.formatter.normal},
                         {field: 'wx_id', title: __('Wx_id')},
-                        {field: 'wechat_name', title: '公众号名称'},
-                        {field: 'user_name', title: '用户名称'},
-                        {field: 'create_dt', title:'开始时间', operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'validity_dt', title:'结束时间', operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'wechat_name', title: '公众号名称',operate:false},
+                        {field: 'user_name', title: '用户名称',operate:false},
+                        {field: 'create_dt', title:'开始时间', operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime,operate:false},
+                        {field: 'validity_dt', title:'结束时间', operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime,operate:false},
                         
                         {
                             field: 'operate',
