@@ -152,8 +152,7 @@ class Authinfolog extends Backend
             $model->where('wx_id',$list['wx_id'])
             ->where('auth',$list['type']);
         }
-        $list = $model->
-                ->order('desc', 'id')
+        $list = $model->order('desc', 'id')
                 ->select();
                 $this->view->assign("list", $list);
 
