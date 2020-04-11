@@ -26,9 +26,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'type', title: __('Type'), searchList: {"0":__('Type 0'),"1":__('Type 1'),"2":__('Type 2'),"3":__('Type 3'),"4":__('Type 4')}, formatter: Table.api.formatter.normal},
                         {field: 'wx_id', title: __('Wx_id')},
                         {field: 'wechat_name', title: '公众号名称'},
-                        {field: 'username', title: '用户名称'},
-                        {field: 'level', title: __('Level'), searchList: {"0":__('Level 0'),"1":__('Level 1'),"2":__('Level 2'),"3":__('Level 3')}, formatter: Table.api.formatter.normal},
-
+                        {field: 'user_name', title: '用户名称'},
                         {field: 'create_dt', title:'开始时间', operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'validity_dt', title:'结束时间', operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         
