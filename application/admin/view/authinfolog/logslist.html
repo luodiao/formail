@@ -1,0 +1,39 @@
+<div class="rows">
+<style type="text/css">
+    .logsbox{
+        background: #f5f5f5;
+    padding: 17px;
+    margin-bottom: 8px;
+    }
+    .logsdesc{
+        margin-top: 20px;
+    }
+    .logslevel{
+        margin-top: 7px;
+        margin-left: 7px;
+    }
+    .logslevel span{
+        color: #fff; 
+        background: #2dbc9c;
+        padding: 3px 10px;
+        border-radius: 4px;
+    }
+</style>
+{volist name="list" id="vo"}
+    <div class="col-xs-12 col-sm-12 logsbox">
+        <div class="col-xs-12 col-sm-6">
+           <b>回访时间：{$vo.createtime|date="Y-m-d H:i:s",###}</b> 
+        </div>
+        <div class="col-xs-12 col-sm-6">
+           <b>回访人员：{$vo.adminname}</b> 
+        </div>
+        <div class="col-xs-12 col-sm-6 logslevel">
+            <span> <i class="fa fa-tag"></i> 马上购买</span>
+        </div>
+        <div class="col-xs-12 col-sm-12 logsdesc">
+                {$vo.desc}
+        </div> 
+    </div>
+    
+{/volist}
+</div>
