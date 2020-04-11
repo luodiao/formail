@@ -145,16 +145,16 @@ class Authinfolog extends Backend
         $list = $this->authinfomodel
                 ->where('id',$row)->find()->toArray();
         $model = $this->model;
-        if($list['type'] > 3){
+        if($list['fk_id'] > 3){
             $model->where('user_id',$list['fk_user_id'])
-            ->where('auth',$list['type']);
+            ->where('auth',$list['fk_id']);
         }else{
             $model->where('wx_id',$list['wx_id'])
-            ->where('auth',$list['type']);
+            ->where('auth',$list['fk_id']);
         }
-        $list = $model->order('desc', 'id')
+        $listlog = $model->order('desc', 'id')
                 ->select();
-                $this->view->assign("list", $list);
+        $this->view->assign("list", $listlog);
 
         return $this->view->fetch();
     }
