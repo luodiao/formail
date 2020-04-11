@@ -4,7 +4,7 @@
         <label class="control-label col-xs-12 col-sm-2">{:__('Auth')}:</label>
         <div class="col-xs-12 col-sm-8">
             {switch name="list.fk_id"}
-                {case value="5" break="0"}个人活码{/case}
+                {case value="5"}个人活码{/case}
                 {case value="4"}社群活码{/case}
                 {case value="3"}节日指数{/case}
                 {case value="2"}群发宝{/case}
@@ -28,6 +28,8 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Wx_id')}:</label>
         <div class="col-xs-12 col-sm-8">
+            <input  class="form-control" type="text" value="{$wechat.id}" name="row[wx_id]" disabled="disabled"/>
+
             <input id="c-wx_id" data-rule="required" data-source="wx/index" class="form-control selectpage" name="row[wx_id]" type="text" value="{$wechat.id}">
         </div>
     </div>
@@ -35,8 +37,7 @@
         <label class="control-label col-xs-12 col-sm-2">{:__('Wxname')}:</label>
 
         <div class="col-xs-12 col-sm-8">
-            {$wechat.name}
-            <input id="c-wxname" class="form-control" name="row[wxname]" type="hidden" value="{$wechat.name}">
+            <input  class="form-control" type="text" value="{$wechat.name}" name="row[wxname]" disabled="disabled"/>
         </div>
     </div>
     <div class="form-group">
