@@ -3,7 +3,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Auth')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input  id="c-auth" class="form-control" type="hidden" value="{$list.fk_id}" name="row[auth]" readonly unselectable='on'/>
+            <input  id="c-auth" class="form-control" type="hidden" value="{$list.fk_id}" name="row[auth]"/>
              <input  class="form-control" type="text" 
              {switch name="list.fk_id"}
                 {case value="5"} value="个人活码" {/case}
@@ -12,7 +12,7 @@
                 {case value="2"}value="群发宝"{/case}
                 {case value="1"}value="裂变宝"{/case}
             {/switch}
-             name="row[wx_id]" readonly unselectable='on'/>
+              readonly unselectable='on'/>
             
         </div>
     </div>
@@ -75,7 +75,7 @@
 
         </div>
     </div>
-    <input id="c-username" class="form-control"  type="hidden" value="{$user.id}" readonly unselectable='on'/>
+    <input id="c-user_id" class="form-control"  name="row[user_id]" type="hidden" value="{$user.id}" readonly unselectable='on'/>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Desc')}:</label>
         <div class="col-xs-12 col-sm-8">
