@@ -142,8 +142,9 @@ class Authinfolog extends Backend
         if (!$row) {
             $this->error(__('No Results were found'));
         }
+
         $list = $this->authinfomodel
-                ->where('id',$row)->find()->toArray();
+                ->where('id',4454)->find()->toArray();
         $model = $this->model;
         if($list['fk_id'] > 3){
             $model->where('user_id',$list['fk_user_id'])
