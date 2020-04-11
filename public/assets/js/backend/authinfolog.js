@@ -34,7 +34,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                             table: table,
                             buttons: [
                                 {name: 'logs', text: '查看历史回访', title: '历史回访', icon: 'glyphicon glyphicon-search', classname: 'btn btn-xs btn-success btn-dialog', url: 'authinfolog/logslist'},
-                                {name: 'addlog', text: '添加回访', title: '添加回访', icon: 'fa fa-plus', classname: 'btn btn-xs btn-danger btn-dialog', url: 'authinfo/loglist'}
+                                {name: 'addlog', text: '添加回访', title: '添加回访', icon: 'fa fa-plus', classname: 'btn btn-xs btn-danger btn-dialog', url: 'authinfo/add'}
                             ],
                             events: Table.api.events.operate,
                             formatter: Table.api.formatter.operate
