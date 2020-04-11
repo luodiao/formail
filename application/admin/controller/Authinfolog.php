@@ -109,6 +109,7 @@ class Authinfolog extends Backend
                     $params[$this->dataLimitField] = $this->auth->id;
                 }
                 $params['admin_id'] = $this->auth->id;
+                $params['adminname'] = $this->auth->nickname;
                 Db::startTrans();
                 try {
                     //是否采用模型验证
