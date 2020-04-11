@@ -23,6 +23,9 @@ class Authinfolog extends Backend
         parent::_initialize();
         $this->model = new \app\admin\model\Authinfolog;
         $this->authinfomodel = new \app\admin\model\WxActivitiesAuthsInfo;
+        $this->WxEs = new \app\admin\model\WxEs;
+        $this->YyznUsers = new \app\admin\model\YyznUsers;
+
         $this->view->assign("authList", $this->model->getAuthList());
         $this->view->assign("typeList", $this->model->getTypeList());
         $this->view->assign("levelList", $this->model->getLevelList());
@@ -95,7 +98,7 @@ class Authinfolog extends Backend
     /**
      * 添加
      */
-    public function add()
+    public function add($ids = null)
     {
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
@@ -134,6 +137,21 @@ class Authinfolog extends Backend
             }
             $this->error(__('Parameter %s can not be empty', ''));
         }
+        $list = $this->authinfomodel
+                ->where('id',$ids)->find()->toArray();
+        //查询公众号信息
+        $wechat = array(
+            'id' => 0,
+            'name' => ''
+        );
+        if($list['fk_id'] < 4){
+            $wechat = $this->WxEs->where('id',$list['wx_id'])->find()->toArray();
+        }
+        //查询用户信息
+        $user = $this->YyznUsers->where('id',$list['fk_user_id'])->find()->toArray();
+        $this->view->assign("wechat", $wechat);
+        $this->view->assign("list", $list);
+        $this->view->assign("user", $user);
         return $this->view->fetch();
     }
 
