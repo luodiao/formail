@@ -3,14 +3,17 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Auth')}:</label>
         <div class="col-xs-12 col-sm-8">
-            {switch name="list.fk_id"}
-                {case value="5"}个人活码{/case}
-                {case value="4"}社群活码{/case}
-                {case value="3"}节日指数{/case}
-                {case value="2"}群发宝{/case}
-                {case value="1"}裂变宝{/case}
-                {default /}马上续费
+            <input  class="form-control" type="hidden" value="{$list.fk_id}" name="row[auth]" disabled="disabled"/>
+             <input  class="form-control" type="text" 
+             {switch name="list.fk_id"}
+                {case value="5"} value="个人活码" {/case}
+                {case value="4"}value="社群活码"{/case}
+                {case value="3"}value="节日指数"{/case}
+                {case value="2"}value="群发宝"{/case}
+                {case value="1"}value="裂变宝"{/case}
             {/switch}
+             name="row[wx_id]" disabled="disabled"/>
+            
         </div>
     </div>
     <div class="form-group">
