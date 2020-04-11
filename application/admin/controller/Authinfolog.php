@@ -22,7 +22,7 @@ class Authinfolog extends Backend
     {
         parent::_initialize();
         $this->model = new \app\admin\model\Authinfolog;
-        // $this->authinfomodel = new \app\admin\model\WxActivitiesAuthsInfo;
+        $this->authinfomodel = new \app\admin\model\WxActivitiesAuthsInfo;
         $this->view->assign("authList", $this->model->getAuthList());
         $this->view->assign("typeList", $this->model->getTypeList());
         $this->view->assign("levelList", $this->model->getLevelList());
@@ -138,7 +138,8 @@ class Authinfolog extends Backend
     }
 
     public function logslist($ids = null){
-        $list = $this->authinfomodel->get($ids)->toArray();
+        $list = $this->authinfomodel
+                ->where('id',$ids)->find()->toArray();
         $model = $this->model;
         if($list['fk_id'] > 3){
             $model->where('user_id',$list['fk_user_id'])
