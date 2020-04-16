@@ -17,9 +17,9 @@ class User extends Model
     protected $updateTime = 'updatetime';
     // 追加属性
     protected $append = [
-        'prevtime_text',
-        'logintime_text',
-        'jointime_text'
+        // 'prevtime_text',
+        // 'logintime_text',
+        // 'jointime_text'
     ];
 
     public function getOriginData()
