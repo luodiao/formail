@@ -98,6 +98,21 @@
             <textarea id="c-remark" class="form-control " rows="5" name="row[remark]" cols="50">{$row.remark}</textarea>
         </div>
     </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">备注图片:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-pay_images" class="form-control" size="50" name="row[pay_images]" type="text" value="{$row.pay_images}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-pay_images" class="btn btn-danger plupload" data-input-id="c-pay_images" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-pay_images"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-pay_images" class="btn btn-primary fachoose" data-input-id="c-pay_images" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-pay_images"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-pay_images"></ul>
+        </div>
+    </div>
+    
     <div class="form-group layer-footer">
         <label class="control-label col-xs-12 col-sm-2"></label>
         <div class="col-xs-12 col-sm-8">
