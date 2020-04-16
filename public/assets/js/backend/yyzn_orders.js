@@ -26,7 +26,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         // {field: 'id', title: __('Id'),operate:false},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'aid', title: __('A_tite'),searchList: {"1":__('A_tite 1'),"2":__('A_tite 2'),"3":__('A_tite 3'),"4":__('A_tite 4'),"5":__('A_tite 5'),"6":__('A_tite 6')}, formatter: Table.api.formatter.normal},
-                        {field: 'pay_type', title: __('Pay_type'),searchList: {"0":__('Pay_type 0'),"1":__('Pay_type 1'),"2":__('Pay_type 2'),"3":__('Pay_type 3'),"4":__('Pay_type 4'),"5":__('Pay_type 5')}, formatter: Table.api.formatter.normal},
+                        {field: 'pay_type', title: __('Pay_type'),searchList: {"0":__('Pay_type 0'),"1":__('Pay_type 1'),"2":__('Pay_type 2'),"3":__('Pay_type 3'),"4":__('Pay_type 4'),"5":__('Pay_type 5'),"7":__('Pay_type 7'),"6":__('Pay_type 6')}, formatter: Table.api.formatter.normal},
                         {field: 'total_price', title: __('Total_price')},
                         {field: 'num', title: __('Num')},
                         {field: 'num_type', title: __('Num_type'),searchList: {"0":__('Num_type 0'),"1":__('Num_type 1'),"2":__('Num_type 2')}, formatter: Table.api.formatter.normal},
