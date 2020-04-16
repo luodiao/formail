@@ -45,7 +45,7 @@ class WxActivitiesAuthsLog extends Model
         $this->YyznUsers = new YyznUsers();
         $this->WxEs = new WxEs();
         $this->OrderDiscount = new OrderDiscount();
-        $this->User = model('User');;
+        $this->User = new User();
     }
 
     public function getUserName($user_id){
