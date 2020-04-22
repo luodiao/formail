@@ -37,7 +37,7 @@ class YyznWorks extends Backend
      */
     public function index()
     {
-        // $this->relationSearch = true;
+        $this->relationSearch = true;
         //设置过滤方法
         $this->request->filter(['strip_tags']);
         if ($this->request->isAjax()) {
@@ -52,7 +52,7 @@ class YyznWorks extends Backend
                 ->count();
 
             $list = $this->model
-                ->with('with:','user')
+                ->with('userTo')
                 ->where($where)
                 ->order($sort, $order)
                 ->limit($offset, $limit)

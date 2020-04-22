@@ -30,9 +30,9 @@ class YyznWorks extends Model
         'assigntime_text'
     ];
 
-    public function user()
+    public function userTo()
     {
-        return $this->hasOne('YyznUsers','user_id','id')->field('username,mobile');
+        return $this->hasOne('YyznUsers','user_id','id');
     }
 
     
