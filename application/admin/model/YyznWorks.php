@@ -30,11 +30,10 @@ class YyznWorks extends Model
         'assigntime_text'
     ];
 
-    public function userTo()
-    {
-        return $this->belongsTo('YyznUsers','user_id','id');
-    }
 
+    public function userTo(){
+        return $this->belongsTo('app\admin\model\YyznUsers','user_id','id', [], 'LEFT')->setEagerlyType(0);
+    }
     
 
     public function getTypeList()
