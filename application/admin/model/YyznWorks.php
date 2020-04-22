@@ -28,7 +28,6 @@ class YyznWorks extends Model
         'type_text',
         'status_text',
         'user_name',
-        'mobile',
         'assigntime_text'
     ];
     
