@@ -23,6 +23,14 @@ class YyznWorks extends Model
     protected $updateTime = false;
     protected $deleteTime = false;
 
+    public function __construct($data = [])
+    {
+        parent::__construct($data);
+        $this->YyznUsers = new YyznUsers();
+        $this->WxEs = new WxEs();
+        $this->OrderDiscount = new OrderDiscount();
+        $this->User = new User();
+    }
     // 追加属性
     protected $append = [
         'type_text',
