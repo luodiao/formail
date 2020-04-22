@@ -35,21 +35,14 @@ class YyznWorks extends Model
     protected $append = [
         'type_text',
         'status_text',
-        'user_name',
         'assigntime_text'
     ];
-    
-    public function getUserName($user_id){
-        return $this->YyznUsers->where('id',$user_id)->value('username');
+    public function profile()
+    {
+        return $this->hasOne('YyznUsers')->field('username,mobile');
     }
 
-    public function getUserNameAttr($value,$data){
-        $value = $value ? $value : (isset($data['user_id']) ? $data['user_id'] : '');
-        if($value > 0){
-            return $this->getUserName($value);
-        }
-        return null;
-    }
+    
 
     public function getTypeList()
     {
