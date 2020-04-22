@@ -32,6 +32,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'wxname', title: __('Wxname')},
                         // {field: 'user_id', title: __('User_id')},
                         {field: 'user_name', title: '用户昵称'},
+                        {field: 'mobile', title: '联系电话'},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'admin_id', title: __('Admin_id')},
                         {field: 'status', title: __('Status'), searchList: {"0":__('Status 0'),"1":__('Status 1'),"2":__('Status 2')}, formatter: Table.api.formatter.status},
