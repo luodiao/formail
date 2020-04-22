@@ -22,7 +22,7 @@ class YyznWorks extends Backend
     {
         parent::_initialize();
         $this->model = new \app\admin\model\YyznWorks;
-        $this->usermodel = new \app\admin\model\YyznWorks;
+        $this->usermodel = new \app\admin\model\YyznUsers;
         $this->view->assign("typeList", $this->model->getTypeList());
         $this->view->assign("statusList", $this->model->getStatusList());
     }
