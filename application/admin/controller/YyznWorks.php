@@ -54,8 +54,6 @@ class YyznWorks extends Backend
             $list = $this->model
                 ->with('userTo')
                 ->where($where)
-                ->order($sort, $order)
-                ->limit($offset, $limit)
                 ->select();
 
             $list = collection($list)->toArray();
