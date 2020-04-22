@@ -9,11 +9,10 @@ class YyznWorks extends Model
 {
 
     
-
     //数据库
-    protected $connection = 'database';
+    protected $connection = 'yyzn';
     // 表名
-    protected $name = 'yyzn_works';
+    protected $name = 'wx_activities_auths_log';
     
     // 自动写入时间戳字段
     protected $autoWriteTimestamp = 'int';
