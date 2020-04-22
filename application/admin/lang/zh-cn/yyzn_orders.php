@@ -10,6 +10,7 @@ return [
     'A_tite 4' => '社群活码',
     'A_tite 5' => '个人活码',
     'A_tite 6' => '微信墙',
+    'A_tite 7' => '51抢好礼',
     'Wx_id' => '微信id',
     'Wechat_name'     => '公众号名称',
     'Createtime'      => '创建时间',

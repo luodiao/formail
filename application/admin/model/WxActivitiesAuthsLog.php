@@ -120,7 +120,7 @@ class WxActivitiesAuthsLog extends Model
     //获取应用名称
     public function getAidList()
     {
-        return ['1' => __('A_tite 1'), '2' => __('A_tite 2'), '3' => __('A_tite 3'),'4' => __('A_tite 4'),'5' => __('A_tite 5'),'6' => __('A_tite 6')];
+        return ['1' => __('A_tite 1'), '2' => __('A_tite 2'), '3' => __('A_tite 3'),'4' => __('A_tite 4'),'5' => __('A_tite 5'),'6' => __('A_tite 6'),'7' => __('A_tite 7')];
     }
 
     public function getAidTextAttr($value,$data){
