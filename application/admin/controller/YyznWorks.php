@@ -38,7 +38,7 @@ class YyznWorks extends Backend
     public function index()
     {
         //设置过滤方法
-        $this->relationSearch = true;
+        // $this->relationSearch = true;
         $this->request->filter(['strip_tags']);
         if ($this->request->isAjax()) {
             //如果发送的来源是Selectpage，则转发到Selectpage
