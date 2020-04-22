@@ -52,7 +52,7 @@ class YyznWorks extends Backend
                 ->count();
 
             $list = $this->model
-                ->with('user')
+                ->with('with:','user')
                 ->where($where)
                 ->order($sort, $order)
                 ->limit($offset, $limit)
