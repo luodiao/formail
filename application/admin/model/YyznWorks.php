@@ -44,7 +44,7 @@ class YyznWorks extends Model
     }
 
     public function getUserNameAttr($value,$data){
-        $value = $value ? $value : (isset($data['fk_user_id']) ? $data['fk_user_id'] : '');
+        $value = $value ? $value : (isset($data['user_id']) ? $data['user_id'] : '');
         if($value > 0){
             return $this->getUserName($value);
         }
