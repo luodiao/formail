@@ -32,7 +32,7 @@ class YyznWorks extends Model
 
     public function userTo()
     {
-        return $this->hasOne('YyznUsers','user_id','id');
+        return $this->belongsTo('YyznUsers','user_id','id');
     }
 
     
