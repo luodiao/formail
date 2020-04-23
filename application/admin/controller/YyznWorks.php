@@ -52,11 +52,9 @@ class YyznWorks extends Backend
                 ->where($where)
                 // ->order($sort, $order)
                 ->count();
-                echo 1111;
-exit;
             $list = $this->model
                 ->where($where)
-                ->order($sort, $order)
+                // ->order($sort, $order)
                 ->limit($offset, $limit)
                 ->select();
 
