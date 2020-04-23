@@ -59,11 +59,7 @@ class YyznWorks extends Backend
                 ->select();
 
             $list = collection($list)->toArray();
-            foreach ($list as $key => &$value) {
-                $val_arr = $this->usermodel->where('id',$value['user_id'])->find();
-                $value['user_name'] = $val_arr->username;
-                $value['mobile'] = $val_arr->mobile;
-            }
+            
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);
