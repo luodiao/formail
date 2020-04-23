@@ -37,7 +37,7 @@ class YyznWorks extends Model
     }
 
     public function userdetail(){
-        return $this->belongsTo('YyznUsers', 'auth_id', 'id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('YyznUsers', 'user_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
     
 
