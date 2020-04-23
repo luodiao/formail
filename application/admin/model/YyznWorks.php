@@ -29,11 +29,14 @@ class YyznWorks extends Model
         'status_text',
         'assigntime_text'
     ];
-
-
-    public function userTo(){
-        return $this->belongsTo('YyznUsers', 'auth_id', 'id', [], 'LEFT')->setEagerlyType(0);
+    public function __construct($data = [])
+    {
+        parent::__construct($data);
+        $this->belongsTo('YyznUsers', 'auth_id', 'id', [], 'LEFT')->setEagerlyType(0);
+        
     }
+
+
     
 
     public function getTypeList()
