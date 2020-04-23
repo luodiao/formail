@@ -25,8 +25,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'userdetai.user_name', title: '用户昵称'},
-                        {field: 'userdetai.mobile', title: '联系电话'},
+                        {field: 'userdetail.username', title: '用户昵称'},
+                        {field: 'userdetail.mobile', title: '联系电话'},
                         {field: 'type', title: __('Type'), searchList: {"1":__('Type 1'),"2":__('Type 2'),"3":__('Type 3')}, formatter: Table.api.formatter.normal},
                         {field: 'auth', title: __('Auth')},
                         // {field: 'auth_id', title: __('Auth_id')},
