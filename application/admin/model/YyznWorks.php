@@ -32,7 +32,7 @@ class YyznWorks extends Model
 
 
     public function userTo(){
-        return $this->belongsTo('app\admin\model\YyznUsers','user_id','id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('YyznUsers', 'auth_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
     
 
