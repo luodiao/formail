@@ -47,11 +47,13 @@ class YyznWorks extends Backend
                 return $this->selectpage();
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+            echo $sort;
+            echo "$$$";
+            echo $order;exit;
             $total = $this->model
                 ->where($where)
                 ->order($sort, $order)
                 ->count();
-            echo 111;exit;
 
             $list = $this->model
                 ->where($where)
