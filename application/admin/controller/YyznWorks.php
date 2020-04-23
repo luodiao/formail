@@ -52,6 +52,7 @@ class YyznWorks extends Backend
                 // ->order($sort, $order)
                 ->count();
             $list = $this->model
+                ->with('userdetail')
                 ->where($where)
                 // ->order($sort, $order)
                 ->limit($offset, $limit)

@@ -32,11 +32,13 @@ class YyznWorks extends Model
     public function __construct($data = [])
     {
         parent::__construct($data);
-        $this->belongsTo('YyznUsers', 'auth_id', 'id', [], 'LEFT')->setEagerlyType(0);
+        
         
     }
 
-
+    public function userdetail(){
+        return $this->belongsTo('YyznUsers', 'auth_id', 'id', [], 'LEFT')->setEagerlyType(0);
+    }
     
 
     public function getTypeList()
