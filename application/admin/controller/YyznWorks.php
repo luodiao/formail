@@ -33,8 +33,6 @@ class YyznWorks extends Backend
     {
         parent::_initialize();
         $this->model = new \app\admin\model\YyznWorks;
-        $this->adminModel = new \app\admin\model\Admin;
-        $this->usermodel = new \app\admin\model\YyznUsers;
         $this->view->assign("typeList", $this->model->getTypeList());
         $this->view->assign("statusList", $this->model->getStatusList());
     }
@@ -87,14 +85,14 @@ class YyznWorks extends Backend
     public function edit($ids = null)
     {
         if ($this->request->isPost()) {
-                $result = $this->model->where(['id'=>$ids])->update(['admin_id'=>11]);
+                $result = $this->model->where(['id'=>$ids])->update(['status'=>'2']);
                 if ($result !== false) {
                     $this->success();
                 } else {
                     $this->error(__('No rows were updated'));
                 }
         }
-        
+
         $row = $this->model->get($ids);
         $userList = $this->adminModel->select();
         $this->view->assign('userList',$userList);
