@@ -94,16 +94,12 @@ class YyznWorks extends Backend
         if (!$row) {
             $this->error(__('No Results were found'));
         }
-        $adminIds = $this->getDataLimitAdminIds();
-        if (is_array($adminIds)) {
-            if (!in_array($row[$this->dataLimitField], $adminIds)) {
-                $this->error(__('You have no permission!'));
-            }
-        }
+
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
-            $params['assigntime'] = time();
-            $result = $row->save($params);
+            $row->admin_id = $params['admin_id'];
+            $row->assigntime = time();
+            $result = $row->save();
             if ($result !== false) {
                 $this->success();
             } else {
