@@ -119,8 +119,9 @@ class YyznWorks extends Backend
         }
         $list = $this->model
                 ->where('id',$ids)->find()->toArray();
-        $userList = $this->adminModel->select();
-        $this->view->assign('userlist',$userList);
+        $listlog = $this->adminModel->order('desc', 'id')
+                ->select();
+        $this->view->assign('userList',$userList);
         $this->view->assign('list',$list);
         return $this->view->fetch();
     }
