@@ -100,6 +100,8 @@ class YyznWorks extends Backend
             $row->admin_id = $params['admin_id'];
             $row->assigntime = time();
             $result = $row->save();
+
+            var_dump($row->toArray());exit;
             if ($result !== false) {
                 $this->success();
             } else {
@@ -108,7 +110,7 @@ class YyznWorks extends Backend
         }
         $userList = $this->adminModel->select();
         $this->view->assign('userList',$userList);
-        $this->view->assign('list',$row);
+        $this->view->assign('list',√);
         return $this->view->fetch();
     }
 

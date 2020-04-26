@@ -11,19 +11,17 @@ use \app\admin\model\User;
 class YyznWorks extends Model
 {
 
-    
-//数据库
+    //数据库
     protected $connection = 'yyzn';
     // 表名
     protected $name = 'yyzn_works';
-
-    // 自动写入时间戳字段
-    protected $autoWriteTimestamp = 'int';
-
-    // 定义时间戳字段名
-    protected $createTime = 'createtime';
-    protected $updateTime = false;
-    protected $deleteTime = false;
+    public function __construct($data = [])
+    {
+        parent::__construct($data);
+        $this->YyznUsers = new YyznUsers();
+        $this->WxEs = new WxEs();
+        
+    }
 
     // 追加属性
     protected $append = [
@@ -31,11 +29,7 @@ class YyznWorks extends Model
         'status_text',
         'assigntime_text'
     ];
-    public function __construct($data = [])
-    {
-        parent::__construct($data);
-         
-    }
+
     
 
     public function getTypeList()
