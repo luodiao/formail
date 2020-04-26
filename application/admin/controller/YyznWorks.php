@@ -22,6 +22,7 @@ class YyznWorks extends Backend
     {
         parent::_initialize();
         $this->model = new \app\admin\model\YyznWorks;
+        $this->adminModel = new \app\admin\model\Admin;
         $this->usermodel = new \app\admin\model\YyznUsers;
         $this->view->assign("typeList", $this->model->getTypeList());
         $this->view->assign("statusList", $this->model->getStatusList());
@@ -69,6 +70,75 @@ class YyznWorks extends Backend
 
             return json($result);
         }
+        return $this->view->fetch();
+    }
+
+    //关联管理员
+    public function ($ids = null){
+        $this->model->where
+    }
+
+    /**
+     * 添加
+     */
+    public function adduser($ids = null)
+    {
+        if ($this->request->isPost()) {
+            $params = $this->request->post("row/a");
+            if ($params) {
+                $params = $this->preExcludeFields($params);
+
+                if ($this->dataLimit && $this->dataLimitFieldAutoFill) {
+                    $params[$this->dataLimitField] = $this->auth->id;
+                }
+                $params['admin_id'] = $this->auth->id;
+                $params['adminname'] = $this->auth->nickname;
+                Db::startTrans();
+                try {
+                    //是否采用模型验证
+                    if ($this->modelValidate) {
+                        $name = str_replace("\\model\\", "\\validate\\", get_class($this->model));
+                        $validate = is_bool($this->modelValidate) ? ($this->modelSceneValidate ? $name . '.add' : $name) : $this->modelValidate;
+                        $this->model->validateFailException(true)->validate($validate);
+                    }
+                    $result = $this->model->allowField(true)->save($params);
+                    Db::commit();
+                } catch (ValidateException $e) {
+                    Db::rollback();
+                    $this->error($e->getMessage());
+                } catch (PDOException $e) {
+                    Db::rollback();
+                    $this->error($e->getMessage());
+                } catch (Exception $e) {
+                    Db::rollback();
+                    $this->error($e->getMessage());
+                }
+                if ($result !== false) {
+                    $this->success();
+                } else {
+                    $this->error(__('No rows were inserted'));
+                }
+            }
+            $this->error(__('Parameter %s can not be empty', ''));
+        }
+        $list = $this->authinfomodel
+                ->where('id',$ids)->find()->toArray();
+        $userList = $this->adminModel->field('id,nickname')->select()->toArray();
+
+        $this->view->assign('userlist',$userList);
+        //查询公众号信息
+        $wechat = array(
+            'id' => 0,
+            'name' => ''
+        );
+        if($list['fk_id'] < 4){
+            $wechat = $this->WxEs->where('id',$list['wx_id'])->find()->toArray();
+        }
+        //查询用户信息
+        $user = $this->YyznUsers->where('id',$list['fk_user_id'])->find()->toArray();
+        $this->view->assign("wechat", $wechat);
+        $this->view->assign("list", $list);
+        $this->view->assign("user", $user);
         return $this->view->fetch();
     }
 
