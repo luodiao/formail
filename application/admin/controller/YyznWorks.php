@@ -49,10 +49,12 @@ class YyznWorks extends Backend
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $whereis['id']  = array('EXP',' is not NULL');
             $total = $this->model
-                ->with('userdetail')
+                ->alias('w')
+                ->join('users u','u.id=w.user_id','LEFT')
+                // ->with('userdetail')
                 ->where($where)
-                ->where($whereis)
-                ->order('id', $order)
+                // ->where($whereis)
+                ->order('u.id', $order)
                 // ->order($sort, $order)
                 ->count();
                 echo $this->getLastSql();exit;
