@@ -14,7 +14,15 @@ class YyznWorks extends Model
     // 表名
     protected $name = 'yyzn_works';
 
-    
+    protected static $relationModel = ['YyznUsers'];
+    // 定义关联外键
+    protected $fk = 'user_id';
+    protected $mapFields = [
+        // 为混淆字段定义映射
+        'id'        =>  'User.id',
+        'status' =>  'User.status',
+    ];
+
     // 自动写入时间戳字段
     protected $autoWriteTimestamp = 'int';
 
