@@ -93,8 +93,8 @@ class YyznWorks extends Backend
                 } else {
                     $this->error(__('No rows were updated'));
                 }
-            }
         }
+        
         $row = $this->model->get($ids);
         $userList = $this->adminModel->select();
         $this->view->assign('userList',$userList);
