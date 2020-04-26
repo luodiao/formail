@@ -25,9 +25,9 @@ ellStyle: function () {return {css: {"width": "600px"}}}
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                         {field: 'image', title: '头像', events: Table.api.events.image, formatter: Table.api.formatter.image},
-                        {field: 'username', title: '用户昵称'},
-                        {field: 'mobile', title: '联系电话'},
+                         {field: 'userdetail.image', title: '头像', events: Table.api.events.image, formatter: Table.api.formatter.image},
+                        {field: 'userdetail.username', title: '用户昵称'},
+                        {field: 'userdetail.mobile', title: '联系电话'},
                         {field: 'type', title: __('Type'), searchList: {"1":__('Type 1'),"2":__('Type 2'),"3":__('Type 3')}, formatter: Table.api.formatter.normal},
                         {field: 'auth', title: __('Auth')},
                         // {field: 'auth_id', title: __('Auth_id')},
