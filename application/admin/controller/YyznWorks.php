@@ -97,36 +97,18 @@ class YyznWorks extends Backend
         $adminIds = $this->getDataLimitAdminIds();
         if (is_array($adminIds)) {
             if (!in_array($row[$this->dataLimitField], $adminIds)) {
-                $this->error(__('You have no permission'));
+                $this->error(__('You have no permission!'));
             }
         }
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
-            if ($params) {
-                $params = $this->preExcludeFields($params);
-                $result = false;
-                Db::startTrans();
-                try {
-                    $params['assigntime'] = time();
-                    $result = $row->save($params);
-                    Db::commit();
-                } catch (ValidateException $e) {
-                    Db::rollback();
-                    $this->error($e->getMessage());
-                } catch (PDOException $e) {
-                    Db::rollback();
-                    $this->error($e->getMessage());
-                } catch (Exception $e) {
-                    Db::rollback();
-                    $this->error($e->getMessage());
-                }
-                if ($result !== false) {
-                    $this->success();
-                } else {
-                    $this->error(__('No rows were updated'));
-                }
+            $params['assigntime'] = time();
+            $result = $row->save($params);
+            if ($result !== false) {
+                $this->success();
+            } else {
+                $this->error(__('No rows were updated'));
             }
-            $this->error(__('Parameter %s can not be empty', ''));
         }
         $userList = $this->adminModel->select();
         $this->view->assign('userList',$userList);
