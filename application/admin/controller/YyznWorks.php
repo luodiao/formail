@@ -47,13 +47,18 @@ class YyznWorks extends Backend
                 return $this->selectpage();
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+            $whereis['userdetail.mobile']  = array('exp',' is not NULL');
             $total = $this->model
+                ->with('userdetail')
                 ->where($where)
+                ->where($whereis)
+                ->order('id', $order)
                 // ->order($sort, $order)
                 ->count();
             $list = $this->model
                 ->with('userdetail')
                 ->where($where)
+                ->where($whereis)
                 ->order('id', $order)
                 ->limit($offset, $limit)
                 ->select();
