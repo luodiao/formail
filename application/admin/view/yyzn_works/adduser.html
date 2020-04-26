@@ -6,7 +6,7 @@
                         
             <select  id="c-type" class="form-control selectpicker" name="row[user]">
                 {foreach name="userList" item="vo"}
-                    <option value="{$vo.id}" {in name="vo.id" value="list['admin_id']"}selected{/in}>{$vo.nickname}</option>
+                    <option value="{$vo.id}" >{$vo.nickname}</option>
                 {/foreach}
             </select>
 

@@ -119,7 +119,7 @@ class YyznWorks extends Backend
         }
         $list = $this->model
                 ->where('id',$ids)->find()->toArray();
-        $userList = $this->adminModel->field('id,nickname')->select();
+        $userList = $this->adminModel->select();
         $this->view->assign('userlist',$userList);
         $this->view->assign('list',$list);
         return $this->view->fetch();
