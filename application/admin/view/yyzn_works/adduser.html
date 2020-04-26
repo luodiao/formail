@@ -2,7 +2,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">请分配管理员:</label>
         <div class="col-xs-12 col-sm-8">
-            <select  class="form-control" name="row[admin_id]">
+            <select  class="form-control" name="row['admin_id']">
                 {volist name="userList" id="vo"}
                     <option value="{$vo.id}" {in name="vo.id" value="list['admin_id']"}selected{/in}>{$vo.nickname}</option>
                 {/volist}
