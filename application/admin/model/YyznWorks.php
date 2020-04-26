@@ -14,7 +14,6 @@ class YyznWorks extends Model
     // 表名
     protected $name = 'yyzn_works';
 
-
     // 自动写入时间戳字段
     protected $autoWriteTimestamp = 'int';
 
@@ -32,12 +31,7 @@ class YyznWorks extends Model
     public function __construct($data = [])
     {
         parent::__construct($data);
-        
-        
-    }
-
-    public function userdetail(){
-        return $this->belongsTo('YyznUsers', 'user_id', 'id', [], 'LEFT')->setEagerlyType(0);
+         
     }
     
 
