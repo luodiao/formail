@@ -46,6 +46,7 @@ class YyznWorks extends Backend
                 return $this->selectpage();
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+            var_dump($where);exit;
             $total = $this->model
                 ->alias('w')
                 ->join('users u','u.id=w.user_id','LEFT')
