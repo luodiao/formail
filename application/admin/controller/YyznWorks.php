@@ -53,7 +53,7 @@ class YyznWorks extends Backend
                 ->join('users u','u.id=w.user_id','LEFT')
                 // ->with('userdetail')
                 ->where($where)
-                ->where('u.mobile','>',0)
+                // ->where('u.mobile','>',0)
                 ->order('w.id', $order)
                 // ->order($sort, $order)
                 ->count();
@@ -62,7 +62,7 @@ class YyznWorks extends Backend
                 ->field('w.id,u.image,u.username,u.mobile,w.auth,w.wxname,w.createtime,w.admin_id,w.status,w.assigntime')
                 ->join('users u','u.id=w.user_id','LEFT')
                 ->where($where)
-                ->where('u.mobile','>',0)
+                // ->where('u.mobile','>',0)
                 // ->where($whereis)
                 ->order('w.id', $order)
                 ->limit($offset, $limit)
