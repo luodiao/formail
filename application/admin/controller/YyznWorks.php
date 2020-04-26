@@ -54,15 +54,16 @@ class YyznWorks extends Backend
                 // ->with('userdetail')
                 ->where($where)
                 // ->where($whereis)
-                ->order('u.id', $order)
+                ->order('w.id', $order)
                 // ->order($sort, $order)
                 ->count();
             $list = $this->model
                 ->alias('w')
+                ->field('w.id,u.image,u.username,u.mobile,w.auth,w.wxname,w.createtime,w.admin_id,w.status,w.assigntime')
                 ->join('users u','u.id=w.user_id','LEFT')
                 ->where($where)
                 // ->where($whereis)
-                ->order('id', $order)
+                ->order('w.id', $order)
                 ->limit($offset, $limit)
                 ->select();
 
