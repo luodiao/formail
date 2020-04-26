@@ -3,7 +3,10 @@
 namespace app\admin\model;
 
 use think\Model;
-
+use \app\admin\model\WxEs;
+use \app\admin\model\YyznUsers;
+use \app\admin\model\OrderDiscount;
+use \app\admin\model\User;
 
 class YyznWorks extends Model
 {
