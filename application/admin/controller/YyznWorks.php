@@ -94,7 +94,6 @@ class YyznWorks extends Backend
         if (!$row) {
             $this->error(__('No Results were found'));
         }
-            var_dump($row->toArray());exit;
 
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
@@ -104,6 +103,7 @@ class YyznWorks extends Backend
             if ($result !== false) {
                 $this->success();
             } else {
+                echo 1111;exit;
                 $this->error(__('No rows were updated'));
             }
         }else{
