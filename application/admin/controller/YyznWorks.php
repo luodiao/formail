@@ -107,7 +107,8 @@ class YyznWorks extends Backend
                 $result = false;
                 Db::startTrans();
                 try {
-                    $result = $row->allowField(true)->save($params);
+                    $params['assigntime'] = time();
+                    $result = $row->save($params);
                     Db::commit();
                 } catch (ValidateException $e) {
                     Db::rollback();
