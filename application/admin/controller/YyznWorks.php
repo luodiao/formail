@@ -104,27 +104,7 @@ class YyznWorks extends Backend
             $params = $this->request->post("row/a");
             if ($params) {
                 $params = $this->preExcludeFields($params);
-                $result = false;
-                Db::startTrans();
-                try {
-                    //是否采用模型验证
-                    if ($this->modelValidate) {
-                        $name = str_replace("\\model\\", "\\validate\\", get_class($this->model));
-                        $validate = is_bool($this->modelValidate) ? ($this->modelSceneValidate ? $name . '.edit' : $name) : $this->modelValidate;
-                        $row->validateFailException(true)->validate($validate);
-                    }
-                    $result = $row->allowField(true)->save($params);
-                    Db::commit();
-                } catch (ValidateException $e) {
-                    Db::rollback();
-                    $this->error($e->getMessage());
-                } catch (PDOException $e) {
-                    Db::rollback();
-                    $this->error($e->getMessage());
-                } catch (Exception $e) {
-                    Db::rollback();
-                    $this->error($e->getMessage());
-                }
+                $result = $row->allowField(true)->save($params);
                 if ($result !== false) {
                     $this->success();
                 } else {
