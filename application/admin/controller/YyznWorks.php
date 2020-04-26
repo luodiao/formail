@@ -61,7 +61,7 @@ class YyznWorks extends Backend
                 ->alias('w')
                 ->join('users u','u.id=w.user_id','LEFT')
                 ->where($where)
-                ->where($whereis)
+                // ->where($whereis)
                 ->order('id', $order)
                 ->limit($offset, $limit)
                 ->select();
