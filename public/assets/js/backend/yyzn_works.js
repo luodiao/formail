@@ -40,7 +40,17 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'admin_id', title: __('Admin_id'),operate:false},
                         {field: 'work_status', title: __('Status'), searchList: {"0":__('Status 0'),"1":__('Status 1'),"2":__('Status 2')}, formatter: Table.api.formatter.status},
                         {field: 'assigntime', title: __('Assigntime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
+                        {
+                            field: 'operate',
+                            title: __('Operate'),
+                            table: table,
+                            buttons: [
+                                {name: 'logs', text: '分配人员', title: '历史回访', icon: 'glyphicon glyphicon-search', classname: 'btn btn-xs btn-success btn-dialog', url: 'yyzn_works/adduser'},
+                                {name: 'addlog', text: '回访记录', title: '添加回访', icon: 'fa fa-plus', classname: 'btn btn-xs btn-danger btn-dialog', url: 'yyzn_works/add'}
+                            ],
+                            events: Table.api.events.operate,
+                            formatter: Table.api.formatter.operate
+                        }
                     ]
                 ]
             });
