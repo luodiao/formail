@@ -55,7 +55,7 @@ class YyznWorks extends Backend
                 ->count();
             $list = $this->model
                 ->alias('w')
-                ->field('w.id,u.image,u.username,u.mobile,w.type,w.desc,w.auth,w.wxname,w.createtime,w.admin_id,w.status,w.assigntime')
+                ->field('w.id,u.image,u.username,u.mobile,w.type,w.desc,w.auth,w.wxname,w.createtime,w.admin_id,w.work_status,w.assigntime')
                 ->join('users u','u.id=w.user_id','LEFT')
                 ->where($where)
                 ->where('u.mobile','>',0)

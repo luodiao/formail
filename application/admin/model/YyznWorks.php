@@ -62,7 +62,7 @@ class YyznWorks extends Model
 
     public function getStatusTextAttr($value, $data)
     {
-        $value = $value ? $value : (isset($data['status']) ? $data['status'] : '');
+        $value = $value ? $value : (isset($data['work_status']) ? $data['work_status'] : '');
         $list = $this->getStatusList();
         return isset($list[$value]) ? $list[$value] : '';
     }
