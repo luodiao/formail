@@ -94,23 +94,24 @@ class YyznWorks extends Backend
         if (!$row) {
             $this->error(__('No Results were found'));
         }
+            var_dump($row->toArray());exit;
 
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
             $row->admin_id = $params['admin_id'];
             $row->assigntime = time();
             $result = $row->save();
-
             if ($result !== false) {
                 $this->success();
             } else {
                 $this->error(__('No rows were updated'));
             }
+        }else{
+            $userList = $this->adminModel->select();
+            $this->view->assign('userList',$userList);
+            $this->view->assign('list',$row);
+            return $this->view->fetch(); 
         }
-        $userList = $this->adminModel->select();
-        $this->view->assign('userList',$userList);
-        $this->view->assign('list',$row);
-        return $this->view->fetch();
     }
 
 }
