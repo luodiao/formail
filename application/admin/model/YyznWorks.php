@@ -18,8 +18,6 @@ class YyznWorks extends Model
     public function __construct($data = [])
     {
         parent::__construct($data);
-        $this->YyznUsers = new YyznUsers();
-        $this->WxEs = new WxEs();
         
     }
 
