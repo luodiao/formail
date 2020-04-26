@@ -88,7 +88,7 @@ class YyznWorks extends Backend
     /**
      * 添加管理员
      */
-    public function adduser($ids = null)
+    public function edit($ids = null)
     {
         $row = $this->model->get($ids);
         if (!$row) {
