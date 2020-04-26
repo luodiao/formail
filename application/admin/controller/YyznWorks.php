@@ -57,9 +57,9 @@ class YyznWorks extends Backend
                 ->order('u.id', $order)
                 // ->order($sort, $order)
                 ->count();
-                echo $this->getLastSql();exit;
             $list = $this->model
-                ->with('userdetail')
+                ->alias('w')
+                ->join('users u','u.id=w.user_id','LEFT')
                 ->where($where)
                 ->where($whereis)
                 ->order('id', $order)
