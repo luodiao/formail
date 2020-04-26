@@ -45,8 +45,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                             title: __('Operate'),
                             table: table,
                             buttons: [
-                                {name: 'logs', text: '分配人员', title: '历史回访', icon: 'glyphicon glyphicon-search', classname: 'btn btn-xs btn-success btn-dialog', url: 'yyzn_works/adduser'},
-                                {name: 'addlog', text: '回访记录', title: '添加回访', icon: 'fa fa-plus', classname: 'btn btn-xs btn-danger btn-dialog', url: 'yyzn_works/add'}
+                                {name: 'logs', text: '分配人员', title: '历史回访', icon: 'fa fa-user-plus', classname: 'btn btn-xs btn-success btn-dialog', url: 'yyzn_works/adduser'},
+                                {name: 'addlog', text: '添加客情', title: '添加回访', icon: 'fa fa-plus', classname: 'btn btn-xs btn-danger btn-dialog', url: 'yyzn_works/add'}
                             ],
                             events: Table.api.events.operate,
                             formatter: Table.api.formatter.operate
