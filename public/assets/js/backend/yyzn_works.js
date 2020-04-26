@@ -27,6 +27,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                          {field: 'image', title: '头像', events: Table.api.events.image, formatter: Table.api.formatter.image},
                         {field: 'username', title: '用户昵称'},
                         {field: 'mobile', title: '联系电话'}
+                    ]
                 ]
             });
 
