@@ -6,10 +6,10 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             Table.api.init({
                 extend: {
                     index_url: 'yyzn_works/index' + location.search,
-                    add_url: 'yyzn_works/add',
-                    edit_url: 'yyzn_works/edit',
-                    del_url: 'yyzn_works/del',
-                    multi_url: 'yyzn_works/multi',
+                    // add_url: 'yyzn_works/add',
+                    // edit_url: 'yyzn_works/edit',
+                    // del_url: 'yyzn_works/del',
+                    // multi_url: 'yyzn_works/multi',
                     table: 'yyzn_works',
                 }
             });
