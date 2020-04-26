@@ -47,19 +47,19 @@ class YyznWorks extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                // ->alias('w')
-                // ->join('users u','u.id=w.user_id','LEFT')
+                ->alias('w')
+                ->join('users u','u.id=w.user_id','LEFT')
                 ->where($where)
-                // ->where('u.mobile','>',0)
-                ->order($sort, $order)
+                ->where('u.mobile','>',0)
+                ->order('w.id', $order)
                 ->count();
             $list = $this->model
-                // ->alias('w')
-                // ->field('w.id,u.image,u.username,u.mobile,w.type,w.desc,w.auth,w.wxname,w.createtime,w.admin_id,w.status,w.assigntime')
-                // ->join('users u','u.id=w.user_id','LEFT')
+                ->alias('w')
+                ->field('w.id,u.image,u.username,u.mobile,w.type,w.desc,w.auth,w.wxname,w.createtime,w.admin_id,w.status,w.assigntime')
+                ->join('users u','u.id=w.user_id','LEFT')
                 ->where($where)
-                // ->where('u.mobile','>',0)
-                ->order($sort, $order)
+                ->where('u.mobile','>',0)
+                ->order('w.id', $order)
                 ->limit($offset, $limit)
                 ->select();
 
