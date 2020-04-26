@@ -14,7 +14,10 @@ class YyznWorks extends Model
     // 表名
     protected $name = 'yyzn_works';
 
-    protected static $relationModel = ['YyznUsers'];
+    protected static $relationModel = [
+        // 给关联模型设置数据表
+        'YyznUsers'   =>  'users',
+    ];
     // 定义关联外键
     protected $fk = 'user_id';
     protected $mapFields = [
