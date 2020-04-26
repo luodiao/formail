@@ -47,15 +47,12 @@ class YyznWorks extends Backend
                 return $this->selectpage();
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
-            $whereis['id']  = array('EXP',' is not NULL');
             $total = $this->model
                 ->alias('w')
                 ->join('users u','u.id=w.user_id','LEFT')
-                // ->with('userdetail')
                 ->where($where)
                 ->where('u.mobile','>',0)
                 ->order('w.id', $order)
-                // ->order($sort, $order)
                 ->count();
             $list = $this->model
                 ->alias('w')
@@ -63,7 +60,6 @@ class YyznWorks extends Backend
                 ->join('users u','u.id=w.user_id','LEFT')
                 ->where($where)
                 ->where('u.mobile','>',0)
-                // ->where($whereis)
                 ->order('w.id', $order)
                 ->limit($offset, $limit)
                 ->select();
