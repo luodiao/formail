@@ -85,7 +85,7 @@ class YyznWorks extends Backend
     public function edit($ids = null)
     {
         if ($this->request->isPost()) {
-                $result = $this->model->where(['id'=>$ids])->update(['status'=>'2']);
+                $result = $this->model->where(['id'=>$ids])->update(['work_status'=>'2']);
                 if ($result !== false) {
                     $this->success();
                 } else {
