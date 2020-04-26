@@ -73,13 +73,9 @@ class YyznWorks extends Backend
         return $this->view->fetch();
     }
 
-    //关联管理员
-    public function ($ids = null){
-        $this->model->where
-    }
 
     /**
-     * 添加
+     * 添加管理员
      */
     public function adduser($ids = null)
     {
@@ -121,24 +117,11 @@ class YyznWorks extends Backend
             }
             $this->error(__('Parameter %s can not be empty', ''));
         }
-        $list = $this->authinfomodel
+        $list = $this->model
                 ->where('id',$ids)->find()->toArray();
         $userList = $this->adminModel->field('id,nickname')->select()->toArray();
-
         $this->view->assign('userlist',$userList);
-        //查询公众号信息
-        $wechat = array(
-            'id' => 0,
-            'name' => ''
-        );
-        if($list['fk_id'] < 4){
-            $wechat = $this->WxEs->where('id',$list['wx_id'])->find()->toArray();
-        }
-        //查询用户信息
-        $user = $this->YyznUsers->where('id',$list['fk_user_id'])->find()->toArray();
-        $this->view->assign("wechat", $wechat);
-        $this->view->assign("list", $list);
-        $this->view->assign("user", $user);
+        $this->view->assign('list',$list);
         return $this->view->fetch();
     }
 
