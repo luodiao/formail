@@ -120,7 +120,6 @@ class YyznWorks extends Backend
         $list = $this->model
                 ->where('id',$ids)->find()->toArray();
         $userList = $this->adminModel->select();
-        var_dump($userList);exit;
         $this->view->assign('userList',$userList);
         $this->view->assign('list',$list);
         return $this->view->fetch();
