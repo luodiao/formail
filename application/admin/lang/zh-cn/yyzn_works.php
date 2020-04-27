@@ -17,5 +17,12 @@ return [
     'Status 0'   => '待处理',
     'Status 1'   => '跟进中',
     'Status 2'   => '已完成',
-    'Assigntime' => '最后分配时间'
+    'Assigntime' => '最后分配时间',
+    'A_tite' => '应用名称',
+    'A_tite 1' => '裂变宝',
+    'A_tite 2' => '群发宝',
+    'A_tite 3' => '节日指数',
+    'A_tite 4' => '社群活码',
+    'A_tite 5' => '个人活码',
+    'A_tite 8' => '趣味测试',
 ];
