@@ -45,8 +45,24 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                             title: __('Operate'),
                             table: table,
                             buttons: [
-                                {name: 'logs', text: '分配人员', title: '历史回访', icon: 'fa fa-user-plus', classname: 'btn btn-xs btn-success btn-dialog', url: 'yyzn_works/edit',data-area='["300px","100px"]'},
-                                {name: 'addlog', text: '添加客情', title: '添加回访', icon: 'fa fa-plus', classname: 'btn btn-xs btn-danger btn-dialog', url: 'yyzn_works/add',data-area='["800px","500px"]'}
+                                {
+                                    name: 'logs',
+                                    text: '分配人员', 
+                                    title: '历史回访', 
+                                    icon: 'fa fa-user-plus', 
+                                    classname: 'btn btn-xs btn-success btn-dialog', 
+                                    url: 'yyzn_works/edit',
+                                    extend: 'data-area=\'["300px","100px"]\''
+                                },
+                                {
+                                    name: 'addlog', 
+                                    text: '添加客情', 
+                                    title: '添加回访', 
+                                    icon: 'fa fa-plus', 
+                                    classname: 'btn btn-xs btn-danger btn-dialog', 
+                                    url: 'yyzn_works/add',
+                                    extend: 'data-area=\'["800px","500px"]\''
+                                }
                             ],
                             events: Table.api.events.operate,
                             formatter: Table.api.formatter.operate
