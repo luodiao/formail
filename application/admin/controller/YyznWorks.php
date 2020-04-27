@@ -149,9 +149,7 @@ class YyznWorks extends Backend
             }
         }
         $this->view->assign('info_row',$info_row);
-
-        
-
+        $this->view->assign('time',time());
         return $this->view->fetch();
     }
 

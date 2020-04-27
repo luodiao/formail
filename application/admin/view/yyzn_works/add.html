@@ -66,8 +66,16 @@ height: 250px;
                         {volist name="info_row" id="vo"}
                             <tr>
                                 <th scope="row">{$authList[$vo.fk_id]}</th>
+
                                 <td>{$vo.wx_name}</td>
-                                <td>{$vo.validity_dt|date="Y-m-d",###}</td>
+                                {php}
+                                    if($time >= $vo['validity_dt']){
+                                    {/php}<td style="color:red">{php}
+                                    }else{
+                                     {/php}<td>{php}
+                                    }
+                                {/php}
+                                {$vo.validity_dt|date="Y-m-d",###}</td>
                             </tr>
                         {/volist}
                     </tbody>
