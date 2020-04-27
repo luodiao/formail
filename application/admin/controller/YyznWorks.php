@@ -161,7 +161,7 @@ class YyznWorks extends Backend
         }
         $this->view->assign('info_row',$info_row);
         $this->view->assign('time',time());
-        $log_row = $this->logmodel->where('fk_user_id',$row->user_id)->select();
+        $log_row = $this->logmodel->where('fk_user_id',$row->user_id)->order('id','desc')->select();
         $this->view->assign('log_row',$log_row);
         return $this->view->fetch();
     }
@@ -279,7 +279,7 @@ class YyznWorks extends Backend
         }
         $this->view->assign('info_row',$info_row);
         $this->view->assign('time',time());
-        $log_row = $this->logmodel->where('fk_user_id',$row->user_id)->select();
+        $log_row = $this->logmodel->where('fk_user_id',$row->user_id)->order('id','desc')->select();
         $this->view->assign('log_row',$log_row);
         return $this->view->fetch();
     }
