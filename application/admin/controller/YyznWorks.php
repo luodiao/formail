@@ -38,7 +38,7 @@ class YyznWorks extends Backend
         $this->view->assign("typeList", $this->model->getTypeList());
         $this->view->assign("statusList", $this->model->getStatusList());
         $this->authinfomodel = new \app\admin\model\WxActivitiesAuthsInfo;
-        $this->view->assign("authList", $this->authinfomodel->getAuthList());
+        $this->view->assign("authList", $this->authinfomodel->getAidList());
     }
     
     /**
