@@ -60,6 +60,9 @@ height: 250px;
                         </tr>
                     </thead>
                     <tbody>
+                    <?php 
+                    var_dump($authList);exit;
+                    ?>
                         {volist name="info_row" id="vo"}
                             <tr>
                                 <th scope="row">{$authList['A_tite '. $vo.fk_id]}</th>
