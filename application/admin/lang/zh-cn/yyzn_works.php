@@ -12,6 +12,7 @@ return [
     'User_id'    => '用户id',
     'Createtime' => '创建时间',
     'Desc'       => '预警原因',
+    'New_desc'       => '最新客情',
     'Admin_id'   => '管理人id',
     'Status'     => '状态',
     'Status 0'   => '待处理',
