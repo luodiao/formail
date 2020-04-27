@@ -58,7 +58,7 @@ height: 250px;
                     <thead>
                         <tr>
                             <th scope="col">应用名称</th>
-                            <th scope="col">开始时间</th>
+                            <th scope="col">公众号名称</th>
                             <th scope="col">结束时间</th>
                         </tr>
                     </thead>
@@ -66,7 +66,7 @@ height: 250px;
                         {volist name="info_row" id="vo"}
                             <tr>
                                 <th scope="row">{$authList[$vo.fk_id]}</th>
-                                <td>{$vo.create_dt|date="Y-m-d",###}</td>
+                                <td>{$vo.wx_name}</td>
                                 <td>{$vo.validity_dt|date="Y-m-d",###}</td>
                             </tr>
                         {/volist}
