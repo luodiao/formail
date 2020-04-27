@@ -123,6 +123,7 @@ class YyznWorks extends Backend
                         'fk_work_id' => $ids,
                         'work_status' => $params['work_status'],
                         'admin_id' => $this->auth->id,
+                        'admin_name' => $this->auth->nickname,
                         'fk_user_id' => $row->user_id,
                         'desc' => $params['new_desc'],
                         'createtime' => time(),
