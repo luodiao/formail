@@ -123,7 +123,7 @@ class YyznWorks extends Backend
                         'fk_work_id' => $ids,
                         'work_status' => $params['work_status'],
                         'admin_id' => $this->auth->id,
-                        'fk_user_id' => $row->id,
+                        'fk_user_id' => $row->user_id,
                         'desc' => $params['new_desc'],
                         'createtime' => time(),
                         );
@@ -160,6 +160,8 @@ class YyznWorks extends Backend
         }
         $this->view->assign('info_row',$info_row);
         $this->view->assign('time',time());
+        $log_row = $this->logmodel->where('fk_user_id',$row->user_id)->select();
+        $this->view->assign('log_row',$log_row);
         return $this->view->fetch();
     }
 

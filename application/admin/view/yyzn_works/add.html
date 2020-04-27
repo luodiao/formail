@@ -85,54 +85,24 @@ height: 250px;
                 
         </div>
         <div class="col-xs-12 col-sm-8 logs">
+        {volist name="log_row" id="vo"}
             <div class="col-xs-12 col-sm-12 logsbox">
                 <div class="col-xs-12 col-sm-8">
-                   <b>回访时间：2019-04-21 23:21:59</b> 
+                   <b>回访时间：{$vo.createtime|date="Y-m-d H:i:s",###}</b> 
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                   <b>回访人员：luoio</b> 
+                   <b>回访人员：{$vo.admin_name}</b> 
                 </div>
                 <div class="col-xs-12 col-sm-6 logslevel">
                     <span> <i class="fa fa-tag"></i> 
-                    马上续费
+                    {$status[$vo.work_status]}
                     </span>
                 </div>
                 <div class="col-xs-12 col-sm-12 logsdesc">
-                        里面有几个细节处理，可以好好学一下。这个客户之前非常冷淡，不像是意愿很强的，但是回访就有希望。首先是昨晚客户就说要买，但是没下单，李腾就直接问对方发票怎么处理（我之前跟大家说过的假定成交法），然后客户又说没法手机支付，本来我们可以直接走支付宝或者微信，李腾想单子都走线上，就切换到客户后台给二维码让客户操作的。
+                        {$vo.desc}
                 </div> 
             </div>
-            <div class="col-xs-12 col-sm-12 logsbox">
-                <div class="col-xs-12 col-sm-8">
-                   <b>回访时间：2019-04-21 23:21:59</b> 
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                   <b>回访人员：luoio</b> 
-                </div>
-                <div class="col-xs-12 col-sm-6 logslevel">
-                    <span> <i class="fa fa-tag"></i> 
-                    马上续费
-                    </span>
-                </div>
-                <div class="col-xs-12 col-sm-12 logsdesc">
-                        里面有几个细节处理，可以好好学一下。这个客户之前非常冷淡，不像是意愿很强的，但是回访就有希望。首先是昨晚客户就说要买，但是没下单，李腾就直接问对方发票怎么处理（我之前跟大家说过的假定成交法），然后客户又说没法手机支付，本来我们可以直接走支付宝或者微信，李腾想单子都走线上，就切换到客户后台给二维码让客户操作的。
-                </div> 
-            </div>
-            <div class="col-xs-12 col-sm-12 logsbox">
-                <div class="col-xs-12 col-sm-6">
-                   <b>回访时间：2019-04-21 23:21:59</b> 
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                   <b>回访人员：luoio</b> 
-                </div>
-                <div class="col-xs-12 col-sm-6 logslevel">
-                    <span> <i class="fa fa-tag"></i> 
-                    马上续费
-                    </span>
-                </div>
-                <div class="col-xs-12 col-sm-12 logsdesc">
-                        里面有几个细节处理，可以好好学一下。这个客户之前非常冷淡，不像是意愿很强的，但是回访就有希望。首先是昨晚客户就说要买，但是没下单，李腾就直接问对方发票怎么处理（我之前跟大家说过的假定成交法），然后客户又说没法手机支付，本来我们可以直接走支付宝或者微信，李腾想单子都走线上，就切换到客户后台给二维码让客户操作的。
-                </div> 
-            </div>
+        {/volist}
         </div>
     </div>
     <div class="form-group">
