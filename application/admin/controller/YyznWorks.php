@@ -145,7 +145,7 @@ class YyznWorks extends Backend
             if($info_value->fk_id == 4 || $info_value->fk_id == 5){
                 $info_value->wx_name = null;
             }else{
-              $info_value->wx_name = $this->wxmodel->where('id',$row->wx_id)->value('name');  
+              $info_value->wx_name = $this->wxmodel->where('id',$info_value->wx_id)->value('name');  
             }
         }
         $this->view->assign('info_row',$info_row);
