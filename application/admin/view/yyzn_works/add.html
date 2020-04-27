@@ -1,51 +1,47 @@
 <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+<style type="text/css">
+    .logsbox{
+        background: #f5f5f5;
+    padding: 17px;
+    margin-bottom: 8px;
+    }
+    .logsdesc{
+        margin-top: 20px;
+    }
+    .logslevel{
+        margin-top: 7px;
+        margin-left: 7px;
+    }
+    .logslevel span{
+        color: #fff; 
+        background: #2dbc9c;
+        padding: 3px 10px;
+        border-radius: 4px;
+    }
+</style>
+    <div class="col-xs-12 col-sm-12">
+        <div class="col-xs-12 col-sm-4">
+            
+            用户信息
+        </div>
+        <div class="col-xs-12 col-sm-8">
+            <div class="col-xs-12 col-sm-12 logsbox">
+                <div class="col-xs-12 col-sm-6">
+                   <b>回访时间：2019-04-21 23:21:59</b> 
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                   <b>回访人员：luoio</b> 
+                </div>
+                <div class="col-xs-12 col-sm-6 logslevel">
+                    <span> <i class="fa fa-tag"></i> 
+                    马上续费
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-12 logsdesc">
+                        里面有几个细节处理，可以好好学一下。这个客户之前非常冷淡，不像是意愿很强的，但是回访就有希望。首先是昨晚客户就说要买，但是没下单，李腾就直接问对方发票怎么处理（我之前跟大家说过的假定成交法），然后客户又说没法手机支付，本来我们可以直接走支付宝或者微信，李腾想单子都走线上，就切换到客户后台给二维码让客户操作的。
+                </div> 
+            </div>
 
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Type')}:</label>
-        <div class="col-xs-12 col-sm-8">
-                        
-            <select  id="c-type" class="form-control selectpicker" name="row[type]">
-                {foreach name="typeList" item="vo"}
-                    <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
-                {/foreach}
-            </select>
-
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Auth')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-auth" class="form-control" name="row[auth]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Auth_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-auth_id" data-rule="required" data-source="auth/index" class="form-control selectpage" name="row[auth_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Wx_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-wx_id" data-rule="required" data-source="wx/index" class="form-control selectpage" name="row[wx_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Wxname')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-wxname" class="form-control" name="row[wxname]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('User_id')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-user_id" data-rule="required" data-source="user/user/index" data-field="nickname" class="form-control selectpage" name="row[user_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Desc')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <textarea id="c-desc" class="form-control " rows="5" name="row[desc]" cols="50"></textarea>
         </div>
     </div>
     <div class="form-group">
@@ -61,11 +57,13 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Assigntime')}:</label>
+        <label class="control-label col-xs-12 col-sm-2">{:__('Desc')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-assigntime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[assigntime]" type="text" value="{:date('Y-m-d H:i:s')}">
+            <textarea id="c-desc" class="form-control " rows="5" name="row[desc]" cols="50"></textarea>
         </div>
     </div>
+    
+
     <div class="form-group layer-footer">
         <label class="control-label col-xs-12 col-sm-2"></label>
         <div class="col-xs-12 col-sm-8">
