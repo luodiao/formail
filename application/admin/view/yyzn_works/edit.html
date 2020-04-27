@@ -4,7 +4,7 @@
         <div class="col-xs-12 col-sm-8">
             <select  class="form-control" name="row[admin_id]">
                 {volist name="userList" id="vo"}
-                    <option value="{$vo.id}" {in name="vo.id" value="list.admin_id"}selected{/in}>{$vo.nickname}</option>
+                    <option value="{$vo.id}" {eq name="vo.id" value="list.admin_id"}selected{/eq}>{$vo.nickname}</option>
                 {/volist}
             </select>
         </div>
