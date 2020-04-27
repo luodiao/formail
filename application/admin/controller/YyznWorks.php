@@ -37,6 +37,8 @@ class YyznWorks extends Backend
         $this->usermodel = new \app\admin\model\YyznUsers;
         $this->view->assign("typeList", $this->model->getTypeList());
         $this->view->assign("statusList", $this->model->getStatusList());
+        $this->authinfomodel = new \app\admin\model\WxActivitiesAuthsInfo;
+        $this->view->assign("authList", $this->authinfomodel->getAuthList());
     }
     
     /**
@@ -136,6 +138,9 @@ class YyznWorks extends Backend
         $this->view->assign('list',$row);
         $user_row = $this->usermodel->get($row->user_id);
         $this->view->assign('user_row',$user_row);
+        $info_row = $this->authinfomodel->where('fk_user_id',$row->user_id)->select();
+        $this->view->assign('info_row',$info_row);
+
         return $this->view->fetch();
     }
 

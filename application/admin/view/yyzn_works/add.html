@@ -60,16 +60,13 @@ height: 250px;
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">裂变宝</th>
-                            <td>20-06-12</td>
-                            <td>20-06-12</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">群发宝宝</th>
-                            <td>20-06-12</td>
-                            <td>20-06-12</td>
-                        </tr>
+                        {volist name="info_row" id="vo"}
+                            <tr>
+                                <th scope="row">{$authList[$vo.fk_id]}</th>
+                                <td>{$vo.create_dt|date="Y-m-d H:i:s",###}</td>
+                                <td>{$vo.validity_dt|date="Y-m-d H:i:s",###}</td>
+                            </tr>
+                        {/volist}
                     </tbody>
                 </table>
         </div>
