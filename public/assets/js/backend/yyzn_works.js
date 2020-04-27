@@ -48,16 +48,16 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                                 {
                                     name: 'logs',
                                     text: '分配人员', 
-                                    title: '历史回访', 
+                                    title: '分配人员', 
                                     icon: 'fa fa-user-plus', 
                                     classname: 'btn btn-xs btn-success btn-dialog', 
                                     url: 'yyzn_works/edit',
-                                    extend: 'data-area=\'["300px","100px"]\''
+                                    extend: 'data-area=\'["300px","200px"]\''
                                 },
                                 {
                                     name: 'addlog', 
                                     text: '添加客情', 
-                                    title: '添加回访', 
+                                    title: '添加客情', 
                                     icon: 'fa fa-plus', 
                                     classname: 'btn btn-xs btn-danger btn-dialog', 
                                     url: 'yyzn_works/add',
