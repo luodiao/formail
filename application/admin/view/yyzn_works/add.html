@@ -60,12 +60,9 @@ height: 250px;
                         </tr>
                     </thead>
                     <tbody>
-                    <?php 
-                    var_dump($authList);exit;
-                    ?>
                         {volist name="info_row" id="vo"}
                             <tr>
-                                <th scope="row">{$authList['A_tite '. $vo.fk_id]}</th>
+                                <th scope="row">{$authList[$vo.fk_id]}</th>
                                 <td>{$vo.create_dt|date="Y-m-d H:i:s",###}</td>
                                 <td>{$vo.validity_dt|date="Y-m-d H:i:s",###}</td>
                             </tr>
