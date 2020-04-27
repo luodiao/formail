@@ -127,7 +127,7 @@ class YyznWorks extends Backend
                         'desc' => $params['new_desc'],
                         'createtime' => time(),
                         );
-                    $this->logmodel->allowField(true)->save($params);
+                    $this->logmodel->allowField(true)->save($logData);
                     Db::commit();
                 } catch (ValidateException $e) {
                     Db::rollback();
