@@ -118,16 +118,16 @@ class YyznWorks extends Backend
                         $validate = is_bool($this->modelValidate) ? ($this->modelSceneValidate ? $name . '.add' : $name) : $this->modelValidate;
                         $this->model->validateFailException(true)->validate($validate);
                     }
-                    $result = $this->model->allowField(true)->save($params);
-                    // $logData = array(
-                    //     'fk_work_id' => $ids,
-                    //     'work_status' => $params['work_status'],
-                    //     'admin_id' => $this->auth->id,
-                    //     'fk_user_id' => $row->id,
-                    //     'desc' => $params['new_desc'],
-                    //     'createtime' => time(),
-                    //     );
-                    // $this->logmodel->allowField(true)->save($logData);
+                    $result = $row->allowField(true)->save($params);
+                    $logData = array(
+                        'fk_work_id' => $ids,
+                        'work_status' => $params['work_status'],
+                        'admin_id' => $this->auth->id,
+                        'fk_user_id' => $row->id,
+                        'desc' => $params['new_desc'],
+                        'createtime' => time(),
+                        );
+                    $this->logmodel->allowField(true)->save($logData);
                     Db::commit();
                 } catch (ValidateException $e) {
                     Db::rollback();
