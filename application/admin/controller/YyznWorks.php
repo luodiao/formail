@@ -81,7 +81,14 @@ class YyznWorks extends Backend
                 ->select();
 
             $list = collection($list)->toArray();
-            
+            $userModel = ;
+            foreach ($variable as $key => &$value) {
+                if($value['admin_id'] > 0){
+                    $value['admin_username'] = $this->adminModel->where('id',$value['admin_id'])->value('nickname')
+                }else{
+                    $value['admin_username'] = null;
+                }
+            }
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);
