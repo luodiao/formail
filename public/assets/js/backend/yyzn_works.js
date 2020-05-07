@@ -38,6 +38,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'admin_id', title: __('Admin_id'),operate:false},
+                        {field: 'admin_username', title: '管理员名称',operate:false},
                         {field: 'work_status', title: __('Status'), searchList: {"0":__('Status 0'),"1":__('Status 1'),"2":__('Status 2')}, formatter: Table.api.formatter.status},
                         {field: 'assigntime', title: __('Assigntime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {
@@ -111,6 +112,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'admin_id', title: __('Admin_id'),operate:false},
+                        {field: 'admin_username', title: '管理员名称',operate:false},
                         {field: 'work_status', title: __('Status'), searchList: {"0":__('Status 0'),"1":__('Status 1'),"2":__('Status 2')}, formatter: Table.api.formatter.status},
                         {field: 'assigntime', title: __('Assigntime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {
